@@ -24,11 +24,10 @@
   /* Style the topnav links */
   .topnav a {
     float: left;
-    height: 50px;
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 16px;
     text-decoration: none;
   }
   
