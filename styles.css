@@ -1,5 +1,5 @@
 .TitleVideo {
-    position: fixed;
+    position: relative;
     top: auto;
     left: auto;
     min-width: 100%;
@@ -11,7 +11,6 @@
     }
 
     .text-overlay {
-      position: absolute;
       top: 100%;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -41,10 +40,5 @@
     background-color: #ddd;
     color: black;
   }
-
-
-.Services  {
-    text-align: center;
-}
 
 
