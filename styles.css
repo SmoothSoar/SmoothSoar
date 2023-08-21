@@ -15,6 +15,16 @@
     background-size: cover;
     }
 
+    .text-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 10px;
+    }
+
 /* Style the top navigation bar */
 .topnav {
     overflow: hidden;
@@ -38,7 +48,7 @@
   }
 
 
-.Title1 .links .Aboutus .Services .JoinUs {
+.links .Aboutus .Services .JoinUs {
     text-align: center;
     font-family: fjalla one;
 }
