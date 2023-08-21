@@ -8,13 +8,13 @@
     background-size: cover;
     }
 
-    .text-overlay {
+   /* .text-overlay {
       top: 100%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: white;
       padding: 10px;
-    }
+    } */ 
 
 /* Style the top navigation bar */
 .topnav {
