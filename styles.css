@@ -51,7 +51,7 @@
   font-family: 'FjallaOne-Regular';
 }
 
-body, div, p, video {
+body, div, #TitleVideo, #bgvideo {
   margin: 0;
   padding: 0;
 }
