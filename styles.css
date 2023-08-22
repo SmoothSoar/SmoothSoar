@@ -30,6 +30,7 @@
 
 /* Style the topnav links */
 .topnav a {
+  font-family: 'FjallaOne-Regular';
   float: left;
   display: block;
   color: #f2f2f2;
@@ -50,5 +51,8 @@
   font-family: 'FjallaOne-Regular';
 }
 
-
+body, div, p, video {
+  margin: 0;
+  padding: 0;
+}
 
