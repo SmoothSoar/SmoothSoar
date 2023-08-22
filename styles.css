@@ -39,19 +39,6 @@
   font-size: 30px; /* Increase font size for better readability */
 }
 
-/* Media query for mobile devices */
-@media (max-width: 767px) {
-  .topnav {
-      height: 80px; /* Adjust height for mobile */
-  }
-  
-  .topnav a {
-      padding: 30px 16px; /* Adjust padding for mobile */
-      font-size: 30px; /* Adjust font size for mobile */
-  }
-}
-
-
 /* Change color on hover */
 .topnav a:hover {
   background-color: #ddd;
