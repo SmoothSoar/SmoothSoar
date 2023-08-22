@@ -25,6 +25,7 @@
   overflow: hidden;
   background-color: #4280C0;
   height: 60px; /* Increase this value for more height if needed */
+  font-family: 'FjallaOne-Regular';
 }
 
 /* Style the topnav links */
@@ -33,9 +34,21 @@
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 20px 16px; /* Adjust the padding to increase spacing */
+  padding: 10px 10px; /* Adjust the padding to increase spacing */
   text-decoration: none;
   font-size: 30px; /* Increase font size for better readability */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .topnav {
+      height: 80px; /* Adjust height for mobile */
+  }
+  
+  .topnav a {
+      padding: 30px 16px; /* Adjust padding for mobile */
+      font-size: 24px; /* Adjust font size for mobile */
+  }
 }
 
 /* Change color on hover */
@@ -44,7 +57,7 @@
   color: #000000;
 }
 
-.Services, .ServicesTXT, .JoinUs {
+.Services, .ServicesTXT, .JoinUs, .JoinUsTXT {
   text-align: center;
   font-family: 'FjallaOne-Regular';
 }
