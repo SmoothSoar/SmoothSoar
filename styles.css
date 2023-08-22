@@ -15,16 +15,9 @@
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 80%;
   object-fit: cover;
-  width: 100%; /* Default size for both mobile and desktop */
-  height: auto; /* Maintain aspect ratio */
-}
-
-/* Apply larger size on desktop screens */
-@media (min-width: 768px) {
-    #bgvideo {
-        width: 800px; /* Desired width on desktop */
-    }
 }
 
 /* Style the top navigation bar */
