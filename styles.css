@@ -3,6 +3,30 @@
   src: url('fonts/FjallaOne.ttf') format('truetype');
 }
 
+.background-video-wrapper {
+  color: #fff;
+  background: #000;
+  text-align: center;
+  position: relative;
+  
+  video {
+    opacity:.5;
+    background: #000;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  .copy {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin: 10vmax 4rem;
+  }
+}
+
 
 /* Style the top navigation bar */
 .topnav {
