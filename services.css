@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'FjallaOne';
+    src: url('fonts/FjallaOne.ttf') format('truetype');
+  }
+
 h1, p {
     text-align: center;
+    font-family: 'FjallaOne-Regular';
 }
