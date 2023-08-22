@@ -3,48 +3,31 @@
   src: url('fonts/FjallaOne.ttf') format('truetype');
 }
 
-.hero-wrapper {
-  height: 100%;
+.background-video-wrapper {
   position: relative;
-  overflow: hidden;
-}
-.hero-wrapper video {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  background-size: cover;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
 }
 
-.hero-content-wrapper {
+.background-video-wrapper video {
+  position: absolute;
   width: 100%;
   height: 100%;
-  position: absolute;
   top: 0;
   left: 0;
-  z-index: 400;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  object-fit: cover;
 }
 
-.hero-content {
+.copy {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin: 10vmax 4rem;
+  color: #fff;
+  font-family: 'FjallaOne-Regular';
   text-align: center;
 }
-.hero-content p {
-  font-size: 3rem;
-  color: #fff;
-}
+
 
 /* Style the top navigation bar */
 .topnav {
