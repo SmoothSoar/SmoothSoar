@@ -3,22 +3,11 @@
   src: url('fonts/FjallaOne-Regular') format('truetype');
 }
 
+/* Styles for screens with a maximum width of 768px (e.g., mobile) */
 @media (max-width: 768px) {
-  /* Styles for screens with a maximum width of 768px (e.g., mobile) */
-  #top-video {
-    height: auto; /* Adjust height for responsive video */
-    padding-top: 40px; /* Add some top padding to center content */
-  }
-  
   .rain-text {
     font-size: 2rem;
-    top: 10%; /* Adjust vertical positioning */
-  }
-  
-  .content {
-    padding: 1em; /* Adjust padding for mobile */
-    bottom: initial; /* Reset bottom positioning */
-    top: calc(100% - 50px); /* Adjust vertical positioning */
+    top: 40%; /* Adjust vertical positioning */
   }
   
   /* Style adjustments for top navigation bar */
@@ -31,6 +20,11 @@
     font-size: 20px; /* Reduce font size for better readability */
   }
 }
+
+  .top-video {
+    height: auto;
+    width: auto;
+  }
 
 *,
 *::before,
@@ -98,126 +92,31 @@ body, html {
   }
 }
 
-/* navbar regular css start */
-.navbar-area {
-  background: rgba(0,0,0,.6);
-  border-bottom: 1px solid #000;
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #4280C0;
+  height: 60px; /* Increase this value for more height if needed */
+  font-family: 'FjallaOne-Regular';
 }
-.site-navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-a.site-logo {
-  font-size: 26px;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #fff;
-  text-decoration: none;
-}
-.site-navbar ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-}
-.site-navbar ul li a {
-  color: #fff;
-  padding: 20px;
+
+/* Style the topnav links */
+.topnav a {
+  font-family: 'FjallaOne-Regular';
+  float: left;
   display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 10px; /* Adjust the padding to increase spacing */
   text-decoration: none;
-  text-transform: uppercase;
+  font-size: 30px; /* Increase font size for better readability */
 }
-.site-navbar ul li a:hover {
-  background: rgba(255,255,255,.1);
-}
-/* navbar regular css end */
 
-
-/* nav-toggler css start */
-.nav-toggler {
-  border: 3px solid #fff;
-  padding: 5px;
-  background-color: transparent;
-  cursor: pointer;
-  height: 39px;
-  display: none;
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: #000000;
 }
-.nav-toggler span, 
-.nav-toggler span:before, 
-.nav-toggler span:after {
-  width: 28px;
-  height: 3px;
-  background-color: #fff;
-  display: block;
-  transition: .3s;
-}
-.nav-toggler span:before {
-  content: '';
-  transform: translateY(-9px);
-}
-.nav-toggler span:after {
-  content: '';
-  transform: translateY(6px);
-}
-.nav-toggler.toggler-open span {
-  background-color: transparent;
-}
-.nav-toggler.toggler-open span:before {
-  transform: translateY(0px) rotate(45deg);
-}
-.nav-toggler.toggler-open span:after {
-  transform: translateY(-3px) rotate(-45deg);
-}
-/* nav-toggler css start */
-/* mobile breakpoint start */
-@media screen and (max-width: 767px) {
-  .container {
-    max-width: 720px;
-  }
-  /* navbar css for mobile start */
-  .nav-toggler{
-    display: block;
-  }
-  .site-navbar {
-    min-height: 60px;
-  }
-  .site-navbar ul {
-    position: absolute;
-    width: 100%;
-    height: calc(100vh - 60px);
-    left: 0;
-    top: 60px;
-    flex-direction: column;
-    align-items: center;
-    border-top: 1px solid #444;
-    background-color: rgba(0,0,0,.75);
-    max-height: 0;
-    overflow: hidden;
-    transition: .3s;
-  }
-  .site-navbar ul li {
-    width: 100%;
-    text-align: center;
-  }
-  .site-navbar ul li a {
-    padding: 25px;
-  }
-  .site-navbar ul li a:hover {
-    background-color: rgba(255,255,255,.1);
-  }
-  .site-navbar ul.open {
-    max-height: 100vh;
-    overflow: visible;
-  }
-  .intro-area h2 {
-    font-size: 36px;
-    margin-bottom: 15px;
-  }  
-  /* navbar css for mobile end */
-}
-/* mobile breakpoint end */
-
 
 .Services, .ServicesTXT, .JoinUs, .JoinUsTXT, .OurWork {
   text-align: center;
