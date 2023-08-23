@@ -72,6 +72,32 @@ body, html {
   z-index: 3;
 }
 
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #4280C0;
+  height: 60px; /* Increase this value for more height if needed */
+  font-family: 'FjallaOne-Regular';
+}
+
+/* Style the topnav links */
+.topnav a {
+  font-family: 'FjallaOne-Regular';
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 10px; /* Adjust the padding to increase spacing */
+  text-decoration: none;
+  font-size: 30px; /* Increase font size for better readability */
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: #000000;
+}
+
 /* Styles for screens with a maximum width of 768px (e.g., mobile) */
 @media (max-width: 768px) {
   .rain-text {
