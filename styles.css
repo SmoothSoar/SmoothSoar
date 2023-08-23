@@ -3,13 +3,6 @@
   src: url('fonts/FjallaOne-Regular') format('truetype');
 }
 
-/* Global styles for all screen sizes */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 body, html {
   margin: 0;
   padding: 0;
@@ -22,7 +15,7 @@ body, html {
   right: 0;
   bottom: 0;
   width: 100%;
-  height: auto; /* Adjust height for responsive video */
+  height: 100%; /* Adjust height for responsive video */
   z-index: -1;
 }
 
