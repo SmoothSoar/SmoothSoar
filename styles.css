@@ -9,63 +9,14 @@ body, html {
   font-family: "FjallaOne-Regular", sans-serif;
 }
 
-/* Styles for the rain video background */
-.rain {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: fixed;
-  inset: 0 0 0 0;
-  z-index: -1;
+.header-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #555;
+  margin: 10px;
+  max-width: 200px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
-
-/* Styles for the top video section */
-#top-video {
-  width: 10%;
-  height: 10%;
-  overflow: hidden;
-  position: relative;
-  z-index: -1;
-}
-
-#top-video::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 1;
-  background: linear-gradient(to right, rgba(blue, 0.3), rgba(red, 0.25));
-}
-
-/* Styles for rain text and content */
-.rain-text {
-  position: absolute;
-  z-index: 3;
-  color: #fff;
-  left: 50%;
-  top: 30%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  font-size: 0;
-  letter-spacing: 1.2em;
-  text-shadow: 3em 3em 4em rgba(0, 0, 0, 0.5);
-  text-align: center;
-  opacity: 0;
-}
-
-.content {
-  position: absolute;
-  bottom: 0;
-  background: linear-gradient(to top, black, transparent);
-  color: #fff;
-  width: 100%;
-  padding: 2em 3em;
-  z-index: 3;
-}
-
-.desc {
-  text-align: center;
-}
-
