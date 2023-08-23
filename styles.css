@@ -12,25 +12,21 @@
   
   .rain-text {
     font-size: 2rem;
-    top: 40%; /* Adjust vertical positioning */
+    top: 10%; /* Adjust vertical positioning */
   }
   
   .content {
     padding: 1em; /* Adjust padding for mobile */
     bottom: initial; /* Reset bottom positioning */
-    top: auto; /* Reset vertical positioning */
+    top: calc(100% - 50px); /* Adjust vertical positioning */
   }
   
-  /* Style adjustments for top navigation bar */
-  .topnav {
-    height: 50px; /* Reduce height for mobile devices */
-  }
-  
-  .topnav a {
-    padding: 10px 5px; /* Reduce padding for better spacing */
-    font-size: 20px; /* Reduce font size for better readability */
-  }
 }
+
+  .top-video {
+    height: auto;
+    width: auto;
+  }
 
 *,
 *::before,
