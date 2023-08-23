@@ -11,9 +11,11 @@ body, html {
 
 /* Styles for the rain video background */
 .rain {
-  position: absolute;
-  width: 10%;
-  height: 10%;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  inset: 0 0 0 0;
   z-index: -1;
 }
 
