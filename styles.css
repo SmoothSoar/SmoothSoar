@@ -14,7 +14,7 @@ body, html {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 80%;
   height: 100%;
   z-index: -1;
   object-fit: cover; /* Maintain aspect ratio and cover entire container */
@@ -23,7 +23,7 @@ body, html {
 /* Styles for the top video section */
 #top-video {
   height: 100vh; /* Set height to full viewport height */
-  width: 100%;
+  width: 80%;
   overflow: hidden;
   position: relative;
   z-index: -1;
@@ -48,7 +48,7 @@ body, html {
   left: 50%;
   top: 30%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  width: 80%;
   font-size: 0;
   letter-spacing: 1.2em;
   text-shadow: 3em 3em 4em rgba(0, 0, 0, 0.5);
