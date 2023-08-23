@@ -5,28 +5,7 @@
 
 @media (max-width: 768px) {
   /* Styles for screens with a maximum width of 768px (e.g., mobile) */
-  #top-video {
-    height: auto; /* Adjust height for responsive video */
-    padding-top: 40px; /* Add some top padding to center content */
-  }
-  
-  .rain-text {
-    font-size: 2rem;
-    top: 10%; /* Adjust vertical positioning */
-  }
-  
-  .content {
-    padding: 1em; /* Adjust padding for mobile */
-    bottom: initial; /* Reset bottom positioning */
-    top: calc(100% - 50px); /* Adjust vertical positioning */
-  }
-  
 }
-
-  .top-video {
-    height: auto;
-    width: auto;
-  }
 
 *,
 *::before,
