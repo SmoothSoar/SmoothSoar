@@ -3,35 +3,7 @@
   src: url('fonts/FjallaOne-Regular') format('truetype');
 }
 
-@media (max-width: 768px) {
-  /* Styles for screens with a maximum width of 768px (e.g., mobile) */
-  #top-video {
-    height: auto; /* Adjust height for responsive video */
-    padding-top: 40px; /* Add some top padding to center content */
-  }
-  
-  .rain-text {
-    font-size: 2rem;
-    top: 40%; /* Adjust vertical positioning */
-  }
-  
-  .content {
-    padding: 1em; /* Adjust padding for mobile */
-    bottom: initial; /* Reset bottom positioning */
-    top: auto; /* Reset vertical positioning */
-  }
-  
-  /* Style adjustments for top navigation bar */
-  .topnav {
-    height: 50px; /* Reduce height for mobile devices */
-  }
-  
-  .topnav a {
-    padding: 10px 5px; /* Reduce padding for better spacing */
-    font-size: 20px; /* Reduce font size for better readability */
-  }
-}
-
+/* Default styles */
 *,
 *::before,
 *::after {
@@ -39,92 +11,88 @@
 }
 
 body, html {
-  margin:0;
-  padding :0;
+  margin: 0;
+  padding: 0;
   font-family: "FjallaOne-Regular", sans-serif;
 }
 
-.rain {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-}
-
-#top-video{
-  left: 0%;
-  top: 0%;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  z-index: -1;
-  
-  &::before {
-    content:"";
-    position: absolute;
-    top:0;
-    right:0;
-    left:0;
-    bottom:0;
-    z-index:1;
-    background:linear-gradient(to right, rgba(blue,0.3), rgba(red,0.25));
-  }
-      
-  .rain-text{
-    position : absolute;
-    z-index : 3;
-    color: #fff;
-    left: 50%;
-    top: 30%;
-    transform:translate(-50%, -50%);  
-    width : 100%; 
-    font-size : 0;
-    letter-spacing : 1.2em;
-    text-shadow : 3px 3px 4px rgba(0, 0, 0, 0.5);
-    text-align : center;
-    opacity : 0;
-  }  
-  
-  .content {
-    position: absolute;
-    bottom: 0;
-    background: linear-gradient(to top, black, transparent);
-    color: #fff;
-    width: 100%;
-    padding: 2em 3em;
-    z-index : 3;
-  }
-}
-
-/* Style the top navigation bar */
+/* Top navigation bar */
 .topnav {
   overflow: hidden;
   background-color: #4280C0;
-  height: 60px; /* Increase this value for more height if needed */
+  height: 60px;
   font-family: 'FjallaOne-Regular';
 }
 
-/* Style the topnav links */
 .topnav a {
   font-family: 'FjallaOne-Regular';
   float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 10px 10px; /* Adjust the padding to increase spacing */
+  padding: 10px 10px;
   text-decoration: none;
-  font-size: 30px; /* Increase font size for better readability */
+  font-size: 30px;
 }
 
-/* Change color on hover */
 .topnav a:hover {
   background-color: #ddd;
   color: #000000;
 }
 
-.Services, .ServicesTXT, .JoinUs, .JoinUsTXT, .OurWork {
+/* Main content section */
+.content {
+  padding: 2em 3em;
   text-align: center;
-  font-family: 'FjallaOne-Regular';
+}
+
+/* Video section */
+#top-video {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.rain {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.rain-text {
+  position: absolute;
+  z-index: 3;
+  color: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-size: 4.5rem;
+  letter-spacing: 1.2em;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  opacity: 0;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .topnav {
+    height: 50px;
+  }
+
+  .topnav a {
+    padding: 10px 5px;
+    font-size: 20px;
+  }
+
+  .rain-text {
+    font-size: 2rem;
+    top: 30%;
+  }
+
+  .content {
+    padding: 1em;
+  }
 }
