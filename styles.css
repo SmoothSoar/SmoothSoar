@@ -98,30 +98,55 @@ body, html {
   }
 }
 
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #4280C0;
-  height: 60px; /* Increase this value for more height if needed */
-  font-family: 'FjallaOne-Regular';
+.navbar {
+  height: 70px;
+  background-color: transparent;
+  padding: 0;
 }
 
-/* Style the topnav links */
-.topnav a {
-  font-family: 'FjallaOne-Regular';
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 10px 10px; /* Adjust the padding to increase spacing */
-  text-decoration: none;
-  font-size: 30px; /* Increase font size for better readability */
+.navbar-brand {
+  color: White;
+  font-weight: 1;
+  font-size: 24px;
+  line-height: 29px;
+  margin-left: 13%;
+  transition: all;
+  transition-duration: 1s;
 }
 
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: #000000;
+.navbar-brand:hover,
+.navbar-brand:focus {
+  transform: scale(1.2);
+  -webkit-text-stroke: 1px /* Your color value for primary */;
+  -webkit-text-stroke-color: transparent;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-nav {
+  width: 70% !important;
+  position: relative;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  color: White;
+  padding: 10px 0px;
+  font-weight: 1;
+  transition: all;
+  transition-duration: 1s;
+}
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus {
+  border-bottom: 2px solid /* Your color value for primary */;
+  transform: translateY(-5px);
 }
 
 .Services, .ServicesTXT, .JoinUs, .JoinUsTXT, .OurWork {
