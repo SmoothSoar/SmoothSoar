@@ -1,0 +1,9 @@
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Signika:300,700");
+
+.Header {
+    color: #333; /* Dark gray color */
+    margin-bottom: 20px; /* Adds some bottom margin */
+    text-align: center;
+}
