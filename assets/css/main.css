@@ -2679,12 +2679,12 @@
 		}
 
 			ul.tab-list li a.active {
-				background: hsl(201, 98%, 36%);
+				background: hsl(123, 100%, 50%);
 				color: #fff !important;
 			}
 
 			ul.tab-list li a:hover {
-				background: hsla(201, 98%, 36%, 0.619);
+				background: hsla(315, 100%, 50%, 0.619);
 				color: #fff !important;
 			}
 
