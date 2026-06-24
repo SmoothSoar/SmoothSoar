@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <!--
     Smooth Soar — Home
-    Honest, authentic content for a growing drone photography business
+    A modern, SEO-optimized, and fully responsive homepage.
 -->
 <html lang="en">
     <head>
@@ -13,113 +13,196 @@
             gtag('js', new Date());
             gtag('config', 'G-C6FB7LNQT5');
         </script>
-        
-        <title>Smooth Soar — Professional Drone Photography &amp; Aerial Imagery</title>
+
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Professional drone photography and videography services for construction, real estate, roofing, and agriculture. FAA-certified pilot based in the US." />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Smooth Soar — Professional Drone Photography &amp; Aerial Imagery</title>
+        <meta name="description" content="Professional drone photography and videography for construction, real estate, roofing, and agriculture. FAA-certified pilot with the DJI Mini 3 Pro. Serving clients across the US." />
         <meta name="keywords" content="drone photography, aerial imagery, construction drone, real estate drone, roofing inspection, agriculture drone" />
+        <link rel="canonical" href="https://smoothsoar.com/" />
 
         <!-- Open Graph -->
-        <meta property="og:title" content="Smooth Soar — Professional Drone Photography &amp; Aerial Imagery" />
-        <meta property="og:description" content="We turn ordinary views into extraordinary imagery — from construction sites to sprawling farmland." />
+        <meta property="og:title" content="Smooth Soar — Professional Drone Photography" />
+        <meta property="og:description" content="Stunning aerial imagery for construction, real estate, roofing, and agriculture. FAA-certified pilot." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://smoothsoar.com/" />
+        <meta property="og:image" content="https://smoothsoar.com/images/og-image.jpg" />
 
         <!-- Schema.org structured data -->
         <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "Smooth Soar",
-            "description": "Professional drone photography and videography services.",
-            "email": "smoothsoardrones@gmail.com",
-            "url": "https://smoothsoar.com",
-            "priceRange": "$$",
-            "openingHours": "Mo-Fr 09:00-18:00",
-            "sameAs": [
-                "https://twitter.com/SmoothSoar",
-                "https://www.instagram.com/smoothsoar/"
-            ]
-        }
+            {
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                "name": "Smooth Soar",
+                "description": "Professional drone photography and videography services.",
+                "email": "smoothsoardrones@gmail.com",
+                "url": "https://smoothsoar.com",
+                "priceRange": "$$",
+                "openingHours": "Mo-Fr 09:00-18:00",
+                "sameAs": [
+                    "https://twitter.com/SmoothSoar",
+                    "https://www.instagram.com/smoothsoar/"
+                ]
+            }
         </script>
 
-        <link rel="canonical" href="https://smoothsoar.com/" />
         <link rel="stylesheet" href="assets/css/main.css" />
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
 
         <style>
+            /* ============================================================
+               HOMEPAGE STYLES — Optimized for mobile & performance
+               ============================================================ */
+
+            /* ----- Service Summary Cards ----- */
             .service-summary {
-                background: rgba(255,255,255,0.04);
+                background: rgba(255, 255, 255, 0.04);
                 border-radius: 8px;
-                padding: 2em 1.5em;
-                margin-bottom: 1.5em;
+                padding: 2rem 1.5rem;
+                margin-bottom: 1.5rem;
                 border-left: 4px solid #062038;
-                transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+                transition: background 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
                 text-align: left;
             }
             .service-summary:hover {
-                background: rgba(255,255,255,0.07);
+                background: rgba(255, 255, 255, 0.07);
                 border-left-color: #aa14cc;
                 transform: translateX(5px);
             }
             .service-summary h3 {
                 color: #fff;
-                font-size: 1.3em;
-                margin-bottom: 0.3em;
+                font-size: 1.3rem;
+                margin-bottom: 0.3rem;
             }
             .service-summary p {
                 color: #c0c5c9;
-                margin-bottom: 0.3em;
-                font-size: 0.95em;
+                margin-bottom: 0.3rem;
+                font-size: 0.95rem;
+                line-height: 1.6;
             }
             .service-summary .tag {
                 display: inline-block;
                 background: rgba(6, 32, 56, 0.8);
                 color: #9ba6af;
-                font-size: 0.7em;
-                padding: 0.2em 0.8em;
+                font-size: 0.7rem;
+                padding: 0.2rem 0.8rem;
                 border-radius: 20px;
                 letter-spacing: 0.5px;
                 text-transform: uppercase;
-                margin-top: 0.5em;
+                margin-top: 0.5rem;
             }
+
+            /* ----- Call to Action Box ----- */
             .cta-box {
                 background: rgba(170, 20, 204, 0.08);
                 border: 1px solid rgba(170, 20, 204, 0.2);
                 border-radius: 8px;
-                padding: 2.5em 2em;
+                padding: 2.5rem 2rem;
                 text-align: center;
-                margin-top: 1em;
+                margin-top: 1rem;
             }
             .cta-box h2 {
                 color: #fff;
-                margin-bottom: 0.3em;
+                margin-bottom: 0.3rem;
+                font-size: 1.8rem;
             }
             .cta-box p {
                 color: #9ba6af;
                 max-width: 500px;
-                margin: 0 auto 1.5em;
+                margin: 0 auto 1.5rem;
+                font-size: 1rem;
             }
+
+            /* ============================================================
+               RESPONSIVE (Mobile-first)
+               ============================================================ */
+
+            /* Small devices (phones, 736px and down) */
             @media screen and (max-width: 736px) {
                 .service-summary {
-                    padding: 1.25em;
+                    padding: 1.25rem;
                 }
                 .cta-box {
-                    padding: 1.5em 1em;
+                    padding: 1.5rem 1rem;
+                }
+                .cta-box h2 {
+                    font-size: 1.4rem;
+                }
+
+                /* Banner text */
+                #banner h1 {
+                    font-size: 1.75rem !important;
+                    line-height: 1.2;
+                }
+                #banner p {
+                    font-size: 1rem !important;
+                    line-height: 1.4;
+                }
+
+                /* Buttons — bigger touch targets */
+                .button,
+                input[type="submit"],
+                input[type="reset"],
+                input[type="button"],
+                button {
+                    min-height: 48px;
+                    padding: 0.6rem 1.5rem;
+                    font-size: 1rem;
+                }
+
+                /* Tabs — bigger tap targets */
+                .tab-list li a {
+                    padding: 0.75rem 1rem;
+                    font-size: 0.95rem;
+                    display: block;
+                    text-align: center;
+                }
+
+                /* Nav links */
+                #menu .links a {
+                    padding: 0.75rem 0;
+                    font-size: 1.1rem;
+                }
+
+                /* Spacing */
+                .wrapper {
+                    padding: 2.5rem 0 1.5rem;
+                }
+                .wrapper .inner {
+                    padding: 0 1rem;
+                }
+
+                /* Footer stack */
+                #footer .flex-3 .col {
+                    width: 100%;
+                    margin-bottom: 1.5rem;
+                }
+            }
+
+            /* Extra small devices (480px and down) */
+            @media screen and (max-width: 480px) {
+                #banner h1 {
+                    font-size: 1.5rem !important;
+                }
+                #banner p {
+                    font-size: 0.9rem !important;
+                }
+                .cta-box h2 {
+                    font-size: 1.2rem;
                 }
             }
         </style>
     </head>
     <body>
 
-        <!-- Header -->
+        <!-- ============================================================
+             HEADER & NAVIGATION
+             ============================================================ -->
         <header id="header">
             <h1><a href="index.html">Smooth<span>Soar</span></a></h1>
             <a href="#menu">Menu</a>
         </header>
 
-        <!-- Navigation -->
         <nav id="menu">
             <ul class="links">
                 <li><a href="index.html" class="active">Home</a></li>
@@ -133,7 +216,9 @@
             </ul>
         </nav>
 
-        <!-- Banner / Hero -->
+        <!-- ============================================================
+             HERO BANNER
+             ============================================================ -->
         <section id="banner" data-video="images/banner">
             <div class="inner">
                 <header>
@@ -144,10 +229,12 @@
             </div>
         </section>
 
-        <!-- Main Content -->
+        <!-- ============================================================
+             MAIN CONTENT
+             ============================================================ -->
         <div id="main">
 
-            <!-- Section: Featured Work -->
+            <!-- ----- Section: Featured Work ----- -->
             <section class="wrapper style1">
                 <div class="inner">
                     <header class="align-center">
@@ -156,18 +243,20 @@
                     </header>
 
                     <div class="flex flex-2">
+                        <!-- Feature 1 -->
                         <div class="video col">
                             <div class="image fit">
-                                <img src="images/pic07.jpg" alt="Farmland from above showing crop patterns" />
+                                <img src="images/pic07.jpg" alt="Farmland from above showing crop patterns" loading="lazy" />
                             </div>
                             <p class="caption">
                                 <strong>Agricultural monitoring</strong> — sweeping views of farmland, capturing crop health and field patterns.
                             </p>
                             <a href="services.html#agriculture" class="link"><span>View services</span></a>
                         </div>
+                        <!-- Feature 2 -->
                         <div class="video col">
                             <div class="image fit">
-                                <img src="images/pic08.jpg" alt="Rural road winding through a forest from a drone" />
+                                <img src="images/pic08.jpg" alt="Rural road winding through a forest from a drone" loading="lazy" />
                             </div>
                             <p class="caption">
                                 <strong>Property showcases</strong> — revealing the full beauty of a property, from its boundaries to its surroundings.
@@ -178,7 +267,7 @@
                 </div>
             </section>
 
-            <!-- Section: Services Overview -->
+            <!-- ----- Section: Services (Tabs) ----- -->
             <section class="wrapper style2">
                 <div class="inner">
                     <header>
@@ -193,28 +282,28 @@
                             <li><a href="#" data-tab="tab-3">Roofing</a></li>
                             <li><a href="#" data-tab="tab-4">Agriculture</a></li>
                         </ul>
-                        <div class="tabs">
 
+                        <div class="tabs">
                             <!-- Tab 1: Construction -->
                             <div class="tab tab-1 flex flex-3 active">
                                 <div class="video col">
                                     <div class="image fit">
-                                        <img src="images/construction1.jpg" alt="Construction site drone view" />
-                                        <div class="arrow"><div class="icon fa-play"></div></div>
+                                        <img src="images/construction1.jpg" alt="Construction site drone view" loading="lazy" />
+                                        <div class="arrow"><span class="icon fa-play"></span></div>
                                     </div>
                                     <a href="construction.html" class="link"><span>Learn more</span></a>
                                 </div>
                                 <div class="video col">
                                     <div class="image fit">
-                                        <img src="images/construction2.jpg" alt="Architectural detail from drone" />
-                                        <div class="arrow"><div class="icon fa-play"></div></div>
+                                        <img src="images/construction2.jpg" alt="Architectural detail from drone" loading="lazy" />
+                                        <div class="arrow"><span class="icon fa-play"></span></div>
                                     </div>
                                     <a href="construction.html" class="link"><span>Learn more</span></a>
                                 </div>
                                 <div class="video col">
                                     <div class="image fit">
-                                        <img src="images/Construction3.jpg" alt="Heavy equipment on site" />
-                                        <div class="arrow"><div class="icon fa-play"></div></div>
+                                        <img src="images/Construction3.jpg" alt="Heavy equipment on site" loading="lazy" />
+                                        <div class="arrow"><span class="icon fa-play"></span></div>
                                     </div>
                                     <a href="construction.html" class="link"><span>Learn more</span></a>
                                 </div>
@@ -224,22 +313,22 @@
                             <div class="tab tab-2 flex flex-3">
                                 <div class="video col">
                                     <div class="image fit">
-                                        <img src="images/pic06.jpg" alt="Luxury home aerial" />
-                                        <div class="arrow"><div class="icon fa-play"></div></div>
+                                        <img src="images/pic06.jpg" alt="Luxury home aerial" loading="lazy" />
+                                        <div class="arrow"><span class="icon fa-play"></span></div>
                                     </div>
                                     <a href="#" class="link"><span>Learn more</span></a>
                                 </div>
                                 <div class="video col">
                                     <div class="image fit">
-                                        <img src="images/pic05.jpg" alt="Suburban neighbourhood aerial" />
-                                        <div class="arrow"><div class="icon fa-play"></div></div>
+                                        <img src="images/pic05.jpg" alt="Suburban neighbourhood aerial" loading="lazy" />
+                                        <div class="arrow"><span class="icon fa-play"></span></div>
                                     </div>
                                     <a href="#" class="link"><span>Learn more</span></a>
                                 </div>
                                 <div class="video col">
                                     <div class="image fit">
-                                        <img src="images/pic04.jpg" alt="Coastal property drone shot" />
-                                        <div class="arrow"><div class="icon fa-play"></div></div>
+                                        <img src="images/pic04.jpg" alt="Coastal property drone shot" loading="lazy" />
+                                        <div class="arrow"><span class="icon fa-play"></span></div>
                                     </div>
                                     <a href="#" class="link"><span>Learn more</span></a>
                                 </div>
@@ -249,22 +338,22 @@
                             <div class="tab tab-3 flex flex-3">
                                 <div class="video col">
                                     <div class="image fit">
-                                        <img src="images/pic03.jpg" alt="Roof inspection from drone" />
-                                        <div class="arrow"><div class="icon fa-play"></div></div>
+                                        <img src="images/pic03.jpg" alt="Roof inspection from drone" loading="lazy" />
+                                        <div class="arrow"><span class="icon fa-play"></span></div>
                                     </div>
                                     <a href="#" class="link"><span>Learn more</span></a>
                                 </div>
                                 <div class="video col">
                                     <div class="image fit">
-                                        <img src="images/pic02.jpg" alt="Commercial roof drone view" />
-                                        <div class="arrow"><div class="icon fa-play"></div></div>
+                                        <img src="images/pic02.jpg" alt="Commercial roof drone view" loading="lazy" />
+                                        <div class="arrow"><span class="icon fa-play"></span></div>
                                     </div>
                                     <a href="#" class="link"><span>Learn more</span></a>
                                 </div>
                                 <div class="video col">
                                     <div class="image fit">
-                                        <img src="images/pic01.jpg" alt="Residential roof inspection" />
-                                        <div class="arrow"><div class="icon fa-play"></div></div>
+                                        <img src="images/pic01.jpg" alt="Residential roof inspection" loading="lazy" />
+                                        <div class="arrow"><span class="icon fa-play"></span></div>
                                     </div>
                                     <a href="#" class="link"><span>Learn more</span></a>
                                 </div>
@@ -274,37 +363,36 @@
                             <div class="tab tab-4 flex flex-3">
                                 <div class="video col">
                                     <div class="image fit">
-                                        <img src="images/pic03.jpg" alt="Crop health monitoring drone" />
-                                        <div class="arrow"><div class="icon fa-play"></div></div>
+                                        <img src="images/pic03.jpg" alt="Crop health monitoring drone" loading="lazy" />
+                                        <div class="arrow"><span class="icon fa-play"></span></div>
                                     </div>
                                     <a href="#" class="link"><span>Learn more</span></a>
                                 </div>
                                 <div class="video col">
                                     <div class="image fit">
-                                        <img src="images/pic02.jpg" alt="Irrigation analysis drone" />
-                                        <div class="arrow"><div class="icon fa-play"></div></div>
+                                        <img src="images/pic02.jpg" alt="Irrigation analysis drone" loading="lazy" />
+                                        <div class="arrow"><span class="icon fa-play"></span></div>
                                     </div>
                                     <a href="#" class="link"><span>Learn more</span></a>
                                 </div>
                                 <div class="video col">
                                     <div class="image fit">
-                                        <img src="images/pic01.jpg" alt="Livestock monitoring drone" />
-                                        <div class="arrow"><div class="icon fa-play"></div></div>
+                                        <img src="images/pic01.jpg" alt="Livestock monitoring drone" loading="lazy" />
+                                        <div class="arrow"><span class="icon fa-play"></span></div>
                                     </div>
                                     <a href="#" class="link"><span>Learn more</span></a>
                                 </div>
                             </div>
+                        </div><!-- /.tabs -->
+                    </div><!-- /.flex-tabs -->
 
-                        </div>
-                    </div>
-
-                    <div class="align-center" style="margin-top: 2em;">
+                    <div class="align-center" style="margin-top: 2rem;">
                         <a href="services.html" class="button alt">View all services →</a>
                     </div>
-                </div>
+                </div><!-- /.inner -->
             </section>
 
-            <!-- Section: About -->
+            <!-- ----- Section: About + CTA ----- -->
             <section class="wrapper">
                 <div class="inner">
                     <header class="align-center">
@@ -316,24 +404,24 @@
                     <div class="flex flex-3">
                         <div class="video col">
                             <div class="image fit">
-                                <img src="images/pic09.jpg" alt="Drone pilot in action" />
-                                <div class="arrow"><div class="icon fa-play"></div></div>
+                                <img src="images/pic09.jpg" alt="Drone pilot in action" loading="lazy" />
+                                <div class="arrow"><span class="icon fa-play"></span></div>
                             </div>
                             <p class="caption"><strong>FAA-certified pilot</strong> — trained, insured, and passionate about what I do.</p>
                             <a href="about.html" class="link"><span>About us</span></a>
                         </div>
                         <div class="video col">
                             <div class="image fit">
-                                <img src="images/pic10.jpg" alt="Drone camera equipment" />
-                                <div class="arrow"><div class="icon fa-play"></div></div>
+                                <img src="images/pic10.jpg" alt="Drone camera equipment" loading="lazy" />
+                                <div class="arrow"><span class="icon fa-play"></span></div>
                             </div>
                             <p class="caption"><strong>DJI Mini 3 Pro</strong> — delivering crisp 4K video and 48MP photos.</p>
                             <a href="about.html" class="link"><span>About us</span></a>
                         </div>
                         <div class="video col">
                             <div class="image fit">
-                                <img src="images/pic11.jpg" alt="Client consultation" />
-                                <div class="arrow"><div class="icon fa-play"></div></div>
+                                <img src="images/pic11.jpg" alt="Client consultation" loading="lazy" />
+                                <div class="arrow"><span class="icon fa-play"></span></div>
                             </div>
                             <p class="caption"><strong>Tailored for you</strong> — I'll adapt to your needs, timeline, and budget.</p>
                             <a href="about.html" class="link"><span>About us</span></a>
@@ -347,15 +435,18 @@
                         <a href="contact.html" class="button special big">📅 Book a consultation</a>
                     </div>
 
-                </div>
+                </div><!-- /.inner -->
             </section>
 
-        </div>
+        </div><!-- /#main -->
 
-        <!-- Footer -->
+        <!-- ============================================================
+             FOOTER
+             ============================================================ -->
         <footer id="footer">
             <div class="inner">
                 <div class="flex flex-3">
+                    <!-- Column 1 -->
                     <div class="col">
                         <h3>Quick links</h3>
                         <ul class="alt">
@@ -363,12 +454,13 @@
                             <li><a href="services.html">Services</a></li>
                             <li><a href="portfolio.html">Portfolio</a></li>
                             <li><a href="pricing.html">Pricing</a></li>
-                            <li><a href="About.html">About</a></li>
+                            <li><a href="about.html">About</a></li>
                             <li><a href="blog.html">Blog</a></li>
                             <li><a href="faq.html">FAQ</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
+                    <!-- Column 2 -->
                     <div class="col">
                         <h3>Services</h3>
                         <ul class="alt">
@@ -378,12 +470,13 @@
                             <li><a href="services.html#agriculture">Agriculture</a></li>
                         </ul>
                     </div>
+                    <!-- Column 3 -->
                     <div class="col">
                         <h3>Connect</h3>
                         <ul class="alt">
-                            <li><a href="https://twitter.com/SmoothSoar">Twitter</a></li>
-                            <li><a href="https://www.instagram.com/smoothsoar/">Instagram</a></li>
-                            <li><a href="#">Facebook</a></li>
+                            <li><a href="https://twitter.com/SmoothSoar" target="_blank" rel="noopener">Twitter</a></li>
+                            <li><a href="https://www.instagram.com/smoothsoar/" target="_blank" rel="noopener">Instagram</a></li>
+                            <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
                             <li><a href="mailto:smoothsoardrones@gmail.com">Email</a></li>
                         </ul>
                     </div>
@@ -391,26 +484,28 @@
             </div>
             <div class="copyright">
                 <ul class="icons">
-                    <li><a href="https://twitter.com/SmoothSoar" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                    <li><a href="https://www.instagram.com/smoothsoar/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                    <li><a href="#" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
+                    <li><a href="https://twitter.com/SmoothSoar" target="_blank" rel="noopener" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" target="_blank" rel="noopener" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                    <li><a href="https://www.instagram.com/smoothsoar/" target="_blank" rel="noopener" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" target="_blank" rel="noopener" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
                 </ul>
-                <p style="margin-top: 1em; font-size: 0.8em; opacity: 0.6;">&copy; Smooth Soar. All rights reserved.</p>
+                <p style="margin-top: 1rem; font-size: 0.8rem; opacity: 0.6;">&copy; Smooth Soar. All rights reserved.</p>
             </div>
         </footer>
 
-        <!-- Scripts -->
+        <!-- ============================================================
+             SCRIPTS
+             ============================================================ -->
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/jquery.scrolly.min.js"></script>
         <script src="assets/js/skel.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
-        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+        <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
         <script>
             $(document).ready(function() {
-                // Close mobile menu on link click
+                // Close mobile menu when any nav link is clicked
                 $('#menu .links a').on('click', function() {
                     if ($('#menu').hasClass('visible')) {
                         $('#menu').removeClass('visible');
