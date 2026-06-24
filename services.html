@@ -3,13 +3,75 @@
 	Smooth Soar  by TEMPLATED
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+	Redesigned services page — consistent with index.html layout & colours
 -->
 <html>
 	<head>
-		<title>Smooth Soar</title>
+		<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C6FB7LNQT5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C6FB7LNQT5');
+</script>
+		<title>Smooth Soar — Services</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Blur effect for coming soon items */
+			.coming-soon {
+				position: relative;
+				overflow: hidden;
+			}
+			.coming-soon .image img {
+				filter: blur(6px);
+				transition: filter 0.3s ease;
+			}
+			.coming-soon .coming-soon-badge {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				background: rgba(0, 0, 0, 0.85);
+				color: #fff;
+				padding: 12px 24px;
+				border-radius: 4px;
+				font-size: 1.2rem;
+				font-weight: 700;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+				z-index: 2;
+				pointer-events: none;
+				border: 2px solid rgba(255, 255, 255, 0.3);
+				backdrop-filter: blur(4px);
+			}
+			.coming-soon .coming-soon-badge small {
+				display: block;
+				font-size: 0.7rem;
+				font-weight: 400;
+				opacity: 0.8;
+				margin-top: 4px;
+				letter-spacing: 1px;
+			}
+			.coming-soon .arrow {
+				opacity: 0.3;
+				pointer-events: none;
+			}
+			.coming-soon .caption {
+				opacity: 0.5;
+			}
+			.coming-soon .link {
+				pointer-events: none;
+				opacity: 0.3;
+			}
+			/* Hover effect - slight unblur to hint at content */
+			.coming-soon:hover .image img {
+				filter: blur(3px);
+			}
+		</style>
 	</head>
 	<body>
 
@@ -28,55 +90,374 @@
 				</ul>
 			</nav>
 
-			<!-- Banner -->
-			<!--
-				To use a video as your background, set data-video to the name of your video without
-				its extension (eg. images/banner). Your video must be available in both .mp4 and .webm
-				formats to work correctly.
-			-->
-				<section id="banner" data-video="images/banner">
-					<div class="inner">
-						<header>
-							<h1>This is Smooth Soar </h1>
-							<p>At Smooth Soar, we specialize in turning the ordinary into the extraordinary through the power of aerial imagery.
-                                With a passion for innovation and an eye for detail, we bring a new perspective to every project.</p>
-						</header>
-						<a href="#main" class="button big alt scrolly">View our work.</a>
-					</div>
+		<!-- Banner / Hero -->
+			<section id="banner" data-video="images/banner">
+				<div class="inner">
+					<header>
+						<h1>Our Services</h1>
+						<p>From construction sites to real estate, agriculture to roofing — we bring a new perspective to every project.<br />
+						Explore what we can do for you.</p>
+					</header>
+					<a href="#main" class="button big alt scrolly">Explore services</a>
+				</div>
+			</section>
 
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One: Service overview -->
+				<section class="wrapper style1">
+					<div class="inner">
+						<header class="align-center">
+							<h2>What we offer</h2>
+							<p>Professional aerial solutions tailored to your industry.</p>
+						</header>
+
+						<!-- Tabbed Services -->
+						<div class="flex flex-tabs">
+							<ul class="tab-list">
+								<li><a href="#" data-tab="tab-1" class="active">Construction</a></li>
+								<li><a href="#" data-tab="tab-2">Real Estate</a></li>
+								<li><a href="#" data-tab="tab-3">Roofing</a></li>
+								<li><a href="#" data-tab="tab-4">Agriculture</a></li>
+							</ul>
+							<div class="tabs">
+
+								<!-- Tab 1: Construction -->
+								<div class="tab tab-1 flex flex-3 active">
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/construction1.jpg" alt="Construction site drone view" />
+											<div class="arrow">
+												<div class="icon fa-play"></div>
+											</div>
+										</div>
+										<p class="caption">Site progress &amp; surveying</p>
+										<a href="#" class="link"><span>Learn more</span></a>
+									</div>
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/construction2.jpg" alt="Architectural detail drone" />
+											<div class="arrow">
+												<div class="icon fa-play"></div>
+											</div>
+										</div>
+										<p class="caption">Architectural highlights</p>
+										<a href="#" class="link"><span>Learn more</span></a>
+									</div>
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/Construction3.jpg" alt="Heavy equipment aerial" />
+											<div class="arrow">
+												<div class="icon fa-play"></div>
+											</div>
+										</div>
+										<p class="caption">Equipment &amp; logistics</p>
+										<a href="#" class="link"><span>Learn more</span></a>
+									</div>
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/Construction4.jpg" alt="Urban construction" />
+											<div class="arrow">
+												<div class="icon fa-play"></div>
+											</div>
+										</div>
+										<p class="caption">Urban development</p>
+										<a href="#" class="link"><span>Learn more</span></a>
+									</div>
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/Construction5.jpg" alt="Bridge construction" />
+											<div class="arrow">
+												<div class="icon fa-play"></div>
+											</div>
+										</div>
+										<p class="caption">Infrastructure projects</p>
+										<a href="#" class="link"><span>Learn more</span></a>
+									</div>
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/Construction6.jpg" alt="Residential construction" />
+											<div class="arrow">
+												<div class="icon fa-play"></div>
+											</div>
+										</div>
+										<p class="caption">Residential builds</p>
+										<a href="#" class="link"><span>Learn more</span></a>
+									</div>
+								</div>
+
+								<!-- Tab 2: Real Estate -->
+								<div class="tab tab-2 flex flex-3">
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/pic06.jpg" alt="Luxury home aerial" />
+											<div class="arrow"><div class="icon fa-play"></div></div>
+										</div>
+										<p class="caption">Luxury property showcase</p>
+										<a href="#" class="link"><span>Learn more</span></a>
+									</div>
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/pic05.jpg" alt="Suburban neighbourhood" />
+											<div class="arrow"><div class="icon fa-play"></div></div>
+										</div>
+										<p class="caption">Neighbourhood overview</p>
+										<a href="#" class="link"><span>Learn more</span></a>
+									</div>
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/pic04.jpg" alt="Coastal property" />
+											<div class="arrow"><div class="icon fa-play"></div></div>
+										</div>
+										<p class="caption">Coastal &amp; waterfront</p>
+										<a href="#" class="link"><span>Learn more</span></a>
+									</div>
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/pic03.jpg" alt="Estate with pool" />
+											<div class="arrow"><div class="icon fa-play"></div></div>
+										</div>
+										<p class="caption">Estate &amp; amenities</p>
+										<a href="#" class="link"><span>Learn more</span></a>
+									</div>
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/pic02.jpg" alt="City apartment" />
+											<div class="arrow"><div class="icon fa-play"></div></div>
+										</div>
+										<p class="caption">Urban &amp; high-rise</p>
+										<a href="#" class="link"><span>Learn more</span></a>
+									</div>
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/pic01.jpg" alt="Rural estate" />
+											<div class="arrow"><div class="icon fa-play"></div></div>
+										</div>
+										<p class="caption">Rural &amp; acreage</p>
+										<a href="#" class="link"><span>Learn more</span></a>
+									</div>
+								</div>
+
+								<!-- Tab 3: Roofing -->
+								<div class="tab tab-3 flex flex-3">
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/pic03.jpg" alt="Roof inspection" />
+											<div class="arrow"><div class="icon fa-play"></div></div>
+										</div>
+										<p class="caption">Detailed roof inspection</p>
+										<a href="#" class="link"><span>Learn more</span></a>
+									</div>
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/pic02.jpg" alt="Commercial roof" />
+											<div class="arrow"><div class="icon fa-play"></div></div>
+										</div>
+										<p class="caption">Commercial roofing</p>
+										<a href="#" class="link"><span>Learn more</span></a>
+									</div>
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/pic01.jpg" alt="Residential roof" />
+											<div class="arrow"><div class="icon fa-play"></div></div>
+										</div>
+										<p class="caption">Residential roof surveys</p>
+										<a href="#" class="link"><span>Learn more</span></a>
+									</div>
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/pic06.jpg" alt="After storm damage" />
+											<div class="arrow"><div class="icon fa-play"></div></div>
+										</div>
+										<p class="caption">Storm damage assessment</p>
+										<a href="#" class="link"><span>Learn more</span></a>
+									</div>
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/pic05.jpg" alt="Solar panel inspection" />
+											<div class="arrow"><div class="icon fa-play"></div></div>
+										</div>
+										<p class="caption">Solar panel &amp; roof health</p>
+										<a href="#" class="link"><span>Learn more</span></a>
+									</div>
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/pic04.jpg" alt="Historic roof" />
+											<div class="arrow"><div class="icon fa-play"></div></div>
+										</div>
+										<p class="caption">Heritage &amp; historic roofs</p>
+										<a href="#" class="link"><span>Learn more</span></a>
+									</div>
+								</div>
+
+								<!-- Tab 4: Agriculture -->
+								<div class="tab tab-4 flex flex-3">
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/pic03.jpg" alt="Crop health drone" />
+											<div class="arrow"><div class="icon fa-play"></div></div>
+										</div>
+										<p class="caption">Crop health monitoring</p>
+										<a href="#" class="link"><span>Learn more</span></a>
+									</div>
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/pic02.jpg" alt="Irrigation analysis" />
+											<div class="arrow"><div class="icon fa-play"></div></div>
+										</div>
+										<p class="caption">Irrigation &amp; water mapping</p>
+										<a href="#" class="link"><span>Learn more</span></a>
+									</div>
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/pic01.jpg" alt="Livestock drone" />
+											<div class="arrow"><div class="icon fa-play"></div></div>
+										</div>
+										<p class="caption">Livestock &amp; pasture overview</p>
+										<a href="#" class="link"><span>Learn more</span></a>
+									</div>
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/pic06.jpg" alt="Fence inspection" />
+											<div class="arrow"><div class="icon fa-play"></div></div>
+										</div>
+										<p class="caption">Fence &amp; infrastructure</p>
+										<a href="#" class="link"><span>Learn more</span></a>
+									</div>
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/pic05.jpg" alt="Time-lapse farming" />
+											<div class="arrow"><div class="icon fa-play"></div></div>
+										</div>
+										<p class="caption">Time-lapse &amp; seasonal change</p>
+										<a href="#" class="link"><span>Learn more</span></a>
+									</div>
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/pic04.jpg" alt="Orchard drone" />
+											<div class="arrow"><div class="icon fa-play"></div></div>
+										</div>
+										<p class="caption">Orchard &amp; vineyard analytics</p>
+										<a href="#" class="link"><span>Learn more</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</section>
 
-<!--- #MAIN -->
-<div id="main">
-<!--- #MAIN -->
+				<!-- Two: Why choose us (with blurred "Coming Soon" items) -->
+				<section class="wrapper style2">
+					<div class="inner">
+						<header class="align-center">
+							<h2>Why Smooth Soar</h2>
+							<p>Precision, safety, and a fresh perspective — every time.</p>
+						</header>
+						<div class="flex flex-3">
+							<!-- Item 1: Coming Soon - High-res mapping & 3D Modelling -->
+							<div class="video col coming-soon">
+								<div class="image fit">
+									<img src="images/pic10.jpg" alt="Aerial mapping" />
+									<div class="coming-soon-badge">
+										Coming Soon
+										<small>High-res mapping &amp; 3D Modelling</small>
+									</div>
+									<div class="arrow"><div class="icon fa-play"></div></div>
+								</div>
+								<p class="caption">High-res mapping &amp; 3D modelling <em>(in development)</em></p>
+								<a href="#" class="link"><span>Read more</span></a>
+							</div>
 
-    <section class="wrapper">
-        <div class="inner">
-        <header class="align-center">
-            <h2>Construction</h2>
-             <p>Elevate your construction projects with a whole new perspective! Our drone photography unveils a unique vantage point for tracking construction progress, conducting site surveys, 
-                and emphasizing intricate architectural details. Gain a competitive edge in the construction industry with our cutting-edge aerial solutions.</p>
-            <h2>Real Estate</h2>
-             <p>We redefine how real estate is presented. Our specialized drone photography and videography services offer an innovative way to showcase properties. 
-                With a keen eye for detail and a passion for capturing the perfect shot, we provide stunning aerial visuals that highlight a property's unique features and surrounding landscape. 
-                From breathtaking panoramic views to captivating walkthrough videos, our aerial perspective transforms listings into compelling stories.
-                Whether you're a real estate agent looking to stand out in a competitive market or a homeowner eager to capture the essence of your property, 
-                our aerial services are tailored to enhance your real estate endeavors. Elevate your listings with Smooth Soar and unlock the potential of aerial storytelling.</p>
-            <h2>Agricultural</h2>
-             <p>Drones provide comprehensive visual documentation for your farm, crucial for insurance claims in the event of natural disasters or unforeseen damages.
-                Beyond insurance, our services extend to precise fence and infrastructure inspections, ensuring structural integrity. Additionally, leverage our time-lapse monitoring to track farm developments and optimize operations</p>
-            </header>
-    </div>
+							<!-- Item 2: Current equipment - DJI Mini 3 Pro -->
+							<div class="video col">
+								<div class="image fit">
+									<img src="images/pic09.jpg" alt="Drone pilot" />
+									<div class="arrow"><div class="icon fa-play"></div></div>
+								</div>
+								<p class="caption">DJI Mini 3 Pro — compact, capable, precise</p>
+								<a href="#" class="link"><span>Read more</span></a>
+							</div>
 
-</div>
+							<!-- Item 3: Coming Soon - Cutting-edge gear -->
+							<div class="video col coming-soon">
+								<div class="image fit">
+									<img src="images/pic11.jpg" alt="Cutting-edge gear" />
+									<div class="coming-soon-badge">
+										Coming Soon
+										<small>Expanding our fleet</small>
+									</div>
+									<div class="arrow"><div class="icon fa-play"></div></div>
+								</div>
+								<p class="caption">Cutting-edge gear <em>(upgrading soon)</em></p>
+								<a href="#" class="link"><span>Read more</span></a>
+							</div>
+						</div>
+					</div>
+				</section>
 
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/skel.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
+				<!-- Three: Call to action -->
+				<section class="wrapper">
+					<div class="inner">
+						<header class="align-center">
+							<h2>Ready to elevate your project?</h2>
+							<p>Contact us today and let's capture your vision from above.</p>
+							<a href="contact.html" class="button big alt">Get in touch</a>
+						</header>
+					</div>
+				</section>
 
+			</div> <!-- /main -->
 
-    </body>
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="flex flex-3">
+						<div class="col">
+							<h3>Vestibullum</h3>
+							<ul class="alt">
+								<li><a href="#">Nascetur nunc varius commodo.</a></li>
+								<li><a href="#">Vis id faucibus montes tempor</a></li>
+								<li><a href="#">Massa amet lobortis vel.</a></li>
+								<li><a href="#">Nascetur nunc varius commodo.</a></li>
+							</ul>
+						</div>
+						<div class="col">
+							<h3>Lobortis</h3>
+							<ul class="alt">
+								<li><a href="#">Nascetur nunc varius commodo.</a></li>
+								<li><a href="#">Vis id faucibus montes tempor</a></li>
+								<li><a href="#">Massa amet lobortis vel.</a></li>
+								<li><a href="#">Nascetur nunc varius commodo.</a></li>
+							</ul>
+						</div>
+						<div class="col">
+							<h3>Accumsan</h3>
+							<ul class="alt">
+								<li><a href="#">Nascetur nunc varius commodo.</a></li>
+								<li><a href="#">Vis id faucibus montes tempor</a></li>
+								<li><a href="#">Massa amet lobortis vel.</a></li>
+								<li><a href="#">Nascetur nunc varius commodo.</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					<ul class="icons">
+						<li><a href="https://twitter.com/SmoothSoar" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/smoothsoar/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>

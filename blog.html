@@ -1,0 +1,322 @@
+<!DOCTYPE HTML>
+<!--
+    Smooth Soar — Blog
+    Honest, educational content to build authority
+-->
+<html lang="en">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-C6FB7LNQT5"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-C6FB7LNQT5');
+        </script>
+        
+        <title>Smooth Soar — Blog | Drone Photography Insights & Tips</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Honest insights, tips, and guides on drone photography for construction, real estate, roofing, and agriculture." />
+        <meta name="keywords" content="drone photography blog, aerial imaging tips, construction drone guide, real estate photography tips" />
+        
+        <meta property="og:title" content="Smooth Soar — Blog | Drone Photography Insights & Tips" />
+        <meta property="og:description" content="Honest insights and tips on drone photography for various industries." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://smoothsoar.com/blog.html" />
+        
+        <link rel="canonical" href="https://smoothsoar.com/blog.html" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        
+        <style>
+            .blog-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 2em;
+                margin: 2em 0;
+            }
+            .blog-card {
+                background: rgba(255,255,255,0.03);
+                border-radius: 8px;
+                overflow: hidden;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            .blog-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+            }
+            .blog-card .image {
+                height: 180px;
+                overflow: hidden;
+            }
+            .blog-card .image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.3s ease;
+            }
+            .blog-card:hover .image img {
+                transform: scale(1.05);
+            }
+            .blog-card .content {
+                padding: 1.25em 1.5em;
+            }
+            .blog-card .content .category {
+                color: #aa14cc;
+                font-size: 0.7em;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: 700;
+            }
+            .blog-card .content h3 {
+                color: #fff;
+                font-size: 1.15em;
+                margin: 0.3em 0 0.5em;
+            }
+            .blog-card .content h3 a {
+                color: #fff;
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+            .blog-card .content h3 a:hover {
+                color: #aa14cc;
+            }
+            .blog-card .content p {
+                color: #9ba6af;
+                font-size: 0.9em;
+                margin-bottom: 0.75em;
+            }
+            .blog-card .content .meta {
+                color: #676d71;
+                font-size: 0.8em;
+            }
+            .blog-card .content .read-more {
+                color: #aa14cc;
+                font-weight: 700;
+                font-size: 0.85em;
+                display: inline-block;
+                margin-top: 0.5em;
+                text-decoration: none;
+                border-bottom: 2px solid transparent;
+                transition: border-color 0.3s ease;
+            }
+            .blog-card .content .read-more:hover {
+                border-bottom-color: #aa14cc;
+            }
+            @media screen and (max-width: 980px) {
+                .blog-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+            @media screen and (max-width: 736px) {
+                .blog-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="index.html">Smooth<span>Soar</span></a></h1>
+            <a href="#menu">Menu</a>
+        </header>
+
+        <!-- Nav -->
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Banner -->
+        <section id="banner" data-video="images/banner">
+            <div class="inner">
+                <header>
+                    <h1>Insights from above</h1>
+                    <p>Honest tips, guides, and industry insights for aerial photography.</p>
+                </header>
+                <a href="#main" class="button big alt scrolly">Read our blog</a>
+            </div>
+        </section>
+
+        <!-- Main -->
+        <div id="main">
+
+            <section class="wrapper">
+                <div class="inner">
+                    <header class="align-center">
+                        <h2>Latest articles</h2>
+                        <p>Educational content to help you understand the value of drone photography.</p>
+                    </header>
+
+                    <div class="blog-grid">
+                        <!-- Blog Post 1 -->
+                        <article class="blog-card">
+                            <div class="image">
+                                <img src="images/construction1.jpg" alt="Construction site drone photography tips" loading="lazy" />
+                            </div>
+                            <div class="content">
+                                <span class="category">Construction</span>
+                                <h3><a href="blog-post.html">How Drone Photography Can Help Construction Projects</a></h3>
+                                <p>Learn how aerial imagery can improve project tracking, site surveys, and quality control on construction sites.</p>
+                                <span class="meta">Coming soon</span>
+                                <a href="#" class="read-more">Read more →</a>
+                            </div>
+                        </article>
+
+                        <!-- Blog Post 2 -->
+                        <article class="blog-card">
+                            <div class="image">
+                                <img src="images/pic06.jpg" alt="Real estate drone photography tips" loading="lazy" />
+                            </div>
+                            <div class="content">
+                                <span class="category">Real Estate</span>
+                                <h3><a href="blog-post.html">Why Aerial Photography Matters for Real Estate Listings</a></h3>
+                                <p>Discover how drone photography can help properties stand out and attract more buyers.</p>
+                                <span class="meta">Coming soon</span>
+                                <a href="#" class="read-more">Read more →</a>
+                            </div>
+                        </article>
+
+                        <!-- Blog Post 3 -->
+                        <article class="blog-card">
+                            <div class="image">
+                                <img src="images/pic03.jpg" alt="Roof inspection drone benefits" loading="lazy" />
+                            </div>
+                            <div class="content">
+                                <span class="category">Roofing</span>
+                                <h3><a href="blog-post.html">Drone Roof Inspections: A Safer Alternative</a></h3>
+                                <p>Explore how drone technology is making roof inspections safer, faster, and more accessible.</p>
+                                <span class="meta">Coming soon</span>
+                                <a href="#" class="read-more">Read more →</a>
+                            </div>
+                        </article>
+
+                        <!-- Blog Post 4 -->
+                        <article class="blog-card">
+                            <div class="image">
+                                <img src="images/pic07.jpg" alt="Agriculture drone monitoring" loading="lazy" />
+                            </div>
+                            <div class="content">
+                                <span class="category">Agriculture</span>
+                                <h3><a href="blog-post.html">Using Drones for Farm Monitoring: A Beginner's Guide</a></h3>
+                                <p>A simple guide to using drones for crop monitoring, irrigation assessment, and farm management.</p>
+                                <span class="meta">Coming soon</span>
+                                <a href="#" class="read-more">Read more →</a>
+                            </div>
+                        </article>
+
+                        <!-- Blog Post 5 -->
+                        <article class="blog-card">
+                            <div class="image">
+                                <img src="images/pic09.jpg" alt="Drone pilot certification" loading="lazy" />
+                            </div>
+                            <div class="content">
+                                <span class="category">Industry</span>
+                                <h3><a href="blog-post.html">What It Means to Be an FAA-Certified Drone Pilot</a></h3>
+                                <p>Understanding the importance of FAA certification and what it means for your project.</p>
+                                <span class="meta">Coming soon</span>
+                                <a href="#" class="read-more">Read more →</a>
+                            </div>
+                        </article>
+
+                        <!-- Blog Post 6 -->
+                        <article class="blog-card">
+                            <div class="image">
+                                <img src="images/pic11.jpg" alt="Drone photography planning" loading="lazy" />
+                            </div>
+                            <div class="content">
+                                <span class="category">Tips</span>
+                                <h3><a href="blog-post.html">5 Things to Consider Before Your First Drone Shoot</a></h3>
+                                <p>Practical tips for preparing your property or site for a drone photography session.</p>
+                                <span class="meta">Coming soon</span>
+                                <a href="#" class="read-more">Read more →</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Newsletter Signup -->
+                    <div class="align-center" style="margin-top: 2.5em; background: rgba(170,20,204,0.05); padding: 2.5em; border-radius: 8px; border: 1px solid rgba(170,20,204,0.1);">
+                        <h3 style="color: #fff;">Stay in the loop</h3>
+                        <p style="color: #9ba6af; max-width: 500px; margin: 0.5em auto 1.5em;">I'll let you know when new articles and resources are available. No spam, just useful content.</p>
+                        <form method="post" action="https://formsubmit.co/smoothsoardrones@gmail.com" style="max-width: 400px; margin: 0 auto;">
+                            <input type="hidden" name="_subject" value="Newsletter signup" />
+                            <input type="hidden" name="_captcha" value="false" />
+                            <div style="display: flex; gap: 0.5em; flex-wrap: wrap; justify-content: center;">
+                                <input type="email" name="email" placeholder="Your email address" required style="flex: 1; min-width: 200px;" />
+                                <input type="submit" value="Subscribe" class="button special" style="flex-shrink: 0;" />
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <div class="flex flex-3">
+                    <div class="col">
+                        <h3>Quick links</h3>
+                        <ul class="alt">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Services</h3>
+                        <ul class="alt">
+                            <li><a href="services.html#construction">Construction</a></li>
+                            <li><a href="services.html#realestate">Real Estate</a></li>
+                            <li><a href="services.html#roofing">Roofing</a></li>
+                            <li><a href="services.html#agriculture">Agriculture</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Connect</h3>
+                        <ul class="alt">
+                            <li><a href="https://twitter.com/SmoothSoar">Twitter</a></li>
+                            <li><a href="https://www.instagram.com/smoothsoar/">Instagram</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="mailto:smoothsoardrones@gmail.com">Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <ul class="icons">
+                    <li><a href="https://twitter.com/SmoothSoar" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                    <li><a href="https://www.instagram.com/smoothsoar/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
+                </ul>
+                <p style="margin-top: 1em; font-size: 0.8em; opacity: 0.6;">&copy; Smooth Soar. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>

@@ -10,6 +10,212 @@
 
 /* Reset */
 
+/* ===== MOBILE OPTIMIZATION ===== */
+
+/* 1. Larger touch targets on mobile */
+@media screen and (max-width: 736px) {
+    .button,
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"],
+    button {
+        min-height: 48px;
+        padding: 0 1.5em;
+        font-size: 1em;
+    }
+    
+    /* Tab buttons - bigger tap targets */
+    .tab-list li a {
+        padding: 0.75em 1em;
+        font-size: 0.95em;
+        display: block;
+        text-align: center;
+    }
+    
+    /* Nav links - easier to tap */
+    #menu .links a {
+        padding: 0.75em 0;
+        font-size: 1.1em;
+    }
+}
+
+/* 2. Better form inputs on mobile */
+@media screen and (max-width: 736px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select,
+    textarea {
+        font-size: 16px !important; /* Prevents iOS zoom */
+        padding: 0.75em 1em;
+    }
+    
+    /* Calendly widget - smaller on mobile */
+    .calendly-section .calendly-inline-widget {
+        height: 550px !important;
+    }
+}
+
+/* 3. Better spacing on mobile */
+@media screen and (max-width: 736px) {
+    .wrapper {
+        padding: 2.5em 0 1.5em 0;
+    }
+    
+    .wrapper .inner {
+        padding: 0 1em;
+    }
+    
+    .service-summary {
+        padding: 1.25em;
+        margin-bottom: 1em;
+    }
+    
+    .service-summary h3 {
+        font-size: 1.1em;
+    }
+    
+    /* Portfolio grid - optimize for mobile */
+    .portfolio-grid {
+        gap: 0.75em;
+    }
+    
+    .portfolio-item img {
+        height: 140px;
+    }
+    
+    .portfolio-item .info {
+        padding: 0.75em;
+    }
+    
+    .portfolio-item .info h4 {
+        font-size: 0.9em;
+    }
+}
+
+/* 4. Better banner text on mobile */
+@media screen and (max-width: 480px) {
+    #banner h1 {
+        font-size: 1.75em;
+        line-height: 1.2;
+    }
+    
+    #banner p {
+        font-size: 1em;
+        line-height: 1.4;
+    }
+}
+
+/* 5. Contact page - info items stack better */
+@media screen and (max-width: 736px) {
+    .info-item {
+        padding: 0.75em 1em;
+        gap: 0.75em;
+    }
+    
+    .info-item .icon {
+        font-size: 1.4em;
+        width: 1.5em;
+    }
+    
+    .info-item .details h4 {
+        font-size: 0.9em;
+    }
+    
+    .info-item .details p {
+        font-size: 0.8em;
+    }
+}
+
+/* 6. Pricing cards - easier to read on mobile */
+@media screen and (max-width: 736px) {
+    .pricing-card {
+        padding: 1.25em;
+    }
+    
+    .pricing-card .price {
+        font-size: 2.2em;
+    }
+    
+    .pricing-card ul li {
+        font-size: 0.85em;
+        padding: 0.4em 0;
+    }
+}
+
+/* 7. Blog cards - optimize */
+@media screen and (max-width: 736px) {
+    .blog-card .content {
+        padding: 0.75em 1em;
+    }
+    
+    .blog-card .content h3 {
+        font-size: 1em;
+    }
+    
+    .blog-card .image {
+        height: 140px;
+    }
+}
+
+/* 8. Footer - stack better */
+@media screen and (max-width: 736px) {
+    #footer .flex-3 .col {
+        width: 100%;
+        margin-bottom: 1.5em;
+    }
+    
+    #footer .copyright .icons li .icon:before {
+        font-size: 1.5em;
+    }
+}
+
+/* 9. Fix contact form on mobile */
+@media screen and (max-width: 736px) {
+    .contact-form-wrapper {
+        padding: 1em;
+    }
+    
+    .contact-form-wrapper .row.uniform {
+        margin: 0 0 -1em -1em;
+    }
+    
+    .contact-form-wrapper .row.uniform > * {
+        padding: 0 0 0 1em;
+    }
+}
+
+/* 10. Better spacing for stats on mobile */
+@media screen and (max-width: 736px) {
+    .stats-grid {
+        gap: 0.75em;
+    }
+    
+    .stat-item .number {
+        font-size: 1.8em;
+    }
+    
+    .stat-item .label {
+        font-size: 0.7em;
+    }
+}
+
+/* 11. Fix CTA boxes */
+@media screen and (max-width: 736px) {
+    .cta-box {
+        padding: 1.5em 1em;
+        margin: 1em 0;
+    }
+    
+    .cta-box h2 {
+        font-size: 1.3em;
+    }
+    
+    .cta-box p {
+        font-size: 0.9em;
+    }
+}
+
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;

@@ -1,0 +1,439 @@
+<!DOCTYPE HTML>
+<!--
+	Smooth Soar — Portfolio
+	SEO optimized with image alt tags and structured data
+-->
+<html lang="en">
+	<head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C6FB7LNQT5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C6FB7LNQT5');
+</script>
+		<title>Smooth Soar — Portfolio | Aerial Photography Gallery</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Explore our portfolio of stunning aerial photography and videography for construction, real estate, roofing, and agriculture projects." />
+		<meta name="keywords" content="drone photography portfolio, aerial imagery gallery, construction drone photos, real estate drone video" />
+		
+		<meta property="og:title" content="Smooth Soar — Portfolio | Aerial Photography Gallery" />
+		<meta property="og:description" content="Explore our portfolio of stunning aerial photography and videography." />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://smoothsoar.com/portfolio.html" />
+		
+		<link rel="canonical" href="https://smoothsoar.com/portfolio.html" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.filter-buttons {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.5em;
+				justify-content: center;
+				margin-bottom: 2em;
+			}
+			.filter-buttons .button {
+				background: rgba(255,255,255,0.06);
+				color: #9ba6af;
+				border: none;
+				padding: 0.5em 1.5em;
+				border-radius: 30px;
+				cursor: pointer;
+				transition: background 0.3s ease, color 0.3s ease;
+				font-size: 0.85em;
+			}
+			.filter-buttons .button:hover,
+			.filter-buttons .button.active {
+				background: rgba(170, 20, 204, 0.3);
+				color: #fff;
+			}
+			.portfolio-grid {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 1.5em;
+			}
+			.portfolio-item {
+				background: rgba(255,255,255,0.03);
+				border-radius: 8px;
+				overflow: hidden;
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+				cursor: pointer;
+			}
+			.portfolio-item:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+			}
+			.portfolio-item img {
+				width: 100%;
+				height: 220px;
+				object-fit: cover;
+				display: block;
+			}
+			.portfolio-item .info {
+				padding: 1em 1.25em;
+			}
+			.portfolio-item .info h4 {
+				color: #fff;
+				font-size: 1em;
+				margin-bottom: 0.2em;
+			}
+			.portfolio-item .info .category {
+				color: #aa14cc;
+				font-size: 0.75em;
+				text-transform: uppercase;
+				letter-spacing: 0.5px;
+			}
+			.portfolio-item .info p {
+				color: #9ba6af;
+				font-size: 0.85em;
+				margin-bottom: 0;
+			}
+			/* Lightbox */
+			.lightbox {
+				display: none;
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0,0,0,0.9);
+				z-index: 9999;
+				justify-content: center;
+				align-items: center;
+				padding: 2em;
+			}
+			.lightbox.active {
+				display: flex;
+			}
+			.lightbox img {
+				max-width: 90%;
+				max-height: 80vh;
+				object-fit: contain;
+				border-radius: 4px;
+			}
+			.lightbox .close-lightbox {
+				position: absolute;
+				top: 20px;
+				right: 30px;
+				color: #fff;
+				font-size: 2.5em;
+				cursor: pointer;
+				transition: color 0.3s ease;
+			}
+			.lightbox .close-lightbox:hover {
+				color: #aa14cc;
+			}
+			.lightbox .lightbox-caption {
+				position: absolute;
+				bottom: 30px;
+				color: #fff;
+				text-align: center;
+				font-size: 1.1em;
+			}
+			@media screen and (max-width: 980px) {
+				.portfolio-grid {
+					grid-template-columns: repeat(2, 1fr);
+				}
+			}
+			@media screen and (max-width: 736px) {
+				.portfolio-grid {
+					grid-template-columns: 1fr 1fr;
+				}
+				.portfolio-item img {
+					height: 160px;
+				}
+			}
+			@media screen and (max-width: 480px) {
+				.portfolio-grid {
+					grid-template-columns: 1fr;
+				}
+			}
+		</style>
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<h1><a href="index.html">Smooth<span>Soar</span></a></h1>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+		<!-- Banner -->
+			<section id="banner" data-video="images/banner">
+				<div class="inner">
+					<header>
+						<h1>Our work</h1>
+						<p>See what we've captured — from construction sites to scenic properties.</p>
+					</header>
+					<a href="#main" class="button big alt scrolly">View gallery</a>
+				</div>
+			</section>
+
+		<!-- Main -->
+			<div id="main">
+
+				<section class="wrapper">
+					<div class="inner">
+						<header class="align-center">
+							<h2>Portfolio gallery</h2>
+							<p>Filter by category to explore our work.</p>
+						</header>
+
+						<div class="filter-buttons">
+							<button class="button active" data-filter="all">All</button>
+							<button class="button" data-filter="construction">Construction</button>
+							<button class="button" data-filter="realestate">Real Estate</button>
+							<button class="button" data-filter="roofing">Roofing</button>
+							<button class="button" data-filter="agriculture">Agriculture</button>
+						</div>
+
+						<div class="portfolio-grid" id="portfolio-grid">
+							<!-- Construction -->
+							<div class="portfolio-item" data-category="construction">
+								<img src="images/construction1.jpg" alt="Construction site aerial view showing progress" loading="lazy" />
+								<div class="info">
+									<h4>Downtown High-Rise</h4>
+									<span class="category">Construction</span>
+									<p>Progress tracking for a 20-story commercial building.</p>
+								</div>
+							</div>
+							<div class="portfolio-item" data-category="construction">
+								<img src="images/construction2.jpg" alt="Architectural details captured from drone" loading="lazy" />
+								<div class="info">
+									<h4>Architectural Details</h4>
+									<span class="category">Construction</span>
+									<p>Close-up aerial shots highlighting design features.</p>
+								</div>
+							</div>
+							<div class="portfolio-item" data-category="construction">
+								<img src="images/Construction3.jpg" alt="Heavy equipment on construction site" loading="lazy" />
+								<div class="info">
+									<h4>Site Equipment</h4>
+									<span class="category">Construction</span>
+									<p>Documenting heavy machinery and site logistics.</p>
+								</div>
+							</div>
+							<div class="portfolio-item" data-category="construction">
+								<img src="images/Construction4.jpg" alt="Urban construction project overview" loading="lazy" />
+								<div class="info">
+									<h4>Urban Development</h4>
+									<span class="category">Construction</span>
+									<p>Overview of a large-scale city development project.</p>
+								</div>
+							</div>
+							<div class="portfolio-item" data-category="construction">
+								<img src="images/Construction5.jpg" alt="Bridge construction from above" loading="lazy" />
+								<div class="info">
+									<h4>Bridge Project</h4>
+									<span class="category">Construction</span>
+									<p>Aerial documentation of a new bridge installation.</p>
+								</div>
+							</div>
+							<div class="portfolio-item" data-category="construction">
+								<img src="images/Construction6.jpg" alt="Residential construction site" loading="lazy" />
+								<div class="info">
+									<h4>Residential Subdivision</h4>
+									<span class="category">Construction</span>
+									<p>Tracking progress on a new housing development.</p>
+								</div>
+							</div>
+							
+							<!-- Real Estate -->
+							<div class="portfolio-item" data-category="realestate">
+								<img src="images/pic06.jpg" alt="Luxury home aerial photography" loading="lazy" />
+								<div class="info">
+									<h4>Luxury Estate</h4>
+									<span class="category">Real Estate</span>
+									<p>Stunning aerial views of a multi-million dollar property.</p>
+								</div>
+							</div>
+							<div class="portfolio-item" data-category="realestate">
+								<img src="images/pic05.jpg" alt="Suburban neighborhood from above" loading="lazy" />
+								<div class="info">
+									<h4>Suburban Community</h4>
+									<span class="category">Real Estate</span>
+									<p>Neighborhood overview showcasing community layout.</p>
+								</div>
+							</div>
+							<div class="portfolio-item" data-category="realestate">
+								<img src="images/pic04.jpg" alt="Coastal property aerial view" loading="lazy" />
+								<div class="info">
+									<h4>Waterfront Property</h4>
+									<span class="category">Real Estate</span>
+									<p>Beautiful coastal home with panoramic ocean views.</p>
+								</div>
+							</div>
+							
+							<!-- Roofing -->
+							<div class="portfolio-item" data-category="roofing">
+								<img src="images/pic03.jpg" alt="Roof inspection drone photo" loading="lazy" />
+								<div class="info">
+									<h4>Residential Roof Inspection</h4>
+									<span class="category">Roofing</span>
+									<p>Detailed inspection of a residential roof for damage.</p>
+								</div>
+							</div>
+							<div class="portfolio-item" data-category="roofing">
+								<img src="images/pic02.jpg" alt="Commercial roof inspection" loading="lazy" />
+								<div class="info">
+									<h4>Commercial Roofing</h4>
+									<span class="category">Roofing</span>
+									<p>Large-scale inspection of a commercial building roof.</p>
+								</div>
+							</div>
+							
+							<!-- Agriculture -->
+							<div class="portfolio-item" data-category="agriculture">
+								<img src="images/pic07.jpg" alt="Farmland from drone showing crop patterns" loading="lazy" />
+								<div class="info">
+									<h4>Crop Monitoring</h4>
+									<span class="category">Agriculture</span>
+									<p>Aerial view of farmland showing crop health and patterns.</p>
+								</div>
+							</div>
+							<div class="portfolio-item" data-category="agriculture">
+								<img src="images/pic08.jpg" alt="Rural property and farmland" loading="lazy" />
+								<div class="info">
+									<h4>Rural Property</h4>
+									<span class="category">Agriculture</span>
+									<p>Farm property overview with surrounding landscape.</p>
+								</div>
+							</div>
+						</div>
+						
+						<!-- CTA -->
+						<div class="align-center" style="margin-top: 3em;">
+							<p style="color: #9ba6af;">Want to see more? <a href="contact.html" style="color: #aa14cc; font-weight: 700;">Get in touch</a> for a custom project.</p>
+						</div>
+					</div>
+				</section>
+
+			</div>
+
+		<!-- Lightbox -->
+		<div class="lightbox" id="lightbox">
+			<span class="close-lightbox" id="close-lightbox">&times;</span>
+			<img src="" alt="Full size image" id="lightbox-image" />
+			<div class="lightbox-caption" id="lightbox-caption"></div>
+		</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="flex flex-3">
+						<div class="col">
+							<h3>Quick links</h3>
+							<ul class="alt">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="services.html">Services</a></li>
+								<li><a href="portfolio.html">Portfolio</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</div>
+						<div class="col">
+							<h3>Services</h3>
+							<ul class="alt">
+								<li><a href="services.html#construction">Construction</a></li>
+								<li><a href="services.html#realestate">Real Estate</a></li>
+								<li><a href="services.html#roofing">Roofing</a></li>
+								<li><a href="services.html#agriculture">Agriculture</a></li>
+							</ul>
+						</div>
+						<div class="col">
+							<h3>Connect</h3>
+							<ul class="alt">
+								<li><a href="https://twitter.com/SmoothSoar">Twitter</a></li>
+								<li><a href="https://www.instagram.com/smoothsoar/">Instagram</a></li>
+								<li><a href="#">Facebook</a></li>
+								<li><a href="mailto:smoothsoardrones@gmail.com">Email</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					<ul class="icons">
+						<li><a href="https://twitter.com/SmoothSoar" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/smoothsoar/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
+					</ul>
+					<p style="margin-top: 1em; font-size: 0.8em; opacity: 0.6;">&copy; Smooth Soar. All rights reserved.</p>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				// Portfolio filtering
+				$(document).ready(function() {
+					$('.filter-buttons .button').on('click', function() {
+						var filter = $(this).data('filter');
+						$('.filter-buttons .button').removeClass('active');
+						$(this).addClass('active');
+						
+						$('.portfolio-item').each(function() {
+							if (filter === 'all' || $(this).data('category') === filter) {
+								$(this).show();
+							} else {
+								$(this).hide();
+														}
+						});
+					});
+					
+					// Lightbox
+					$('.portfolio-item').on('click', function() {
+						var img = $(this).find('img').attr('src');
+						var title = $(this).find('h4').text();
+						var category = $(this).find('.category').text();
+						var description = $(this).find('p').text();
+						
+						$('#lightbox-image').attr('src', img);
+						$('#lightbox-caption').html('<strong>' + title + '</strong> — ' + category + '<br /><span style="font-size:0.85em;opacity:0.7;">' + description + '</span>');
+						$('#lightbox').addClass('active');
+						$('body').css('overflow', 'hidden');
+					});
+					
+					$('#close-lightbox').on('click', function() {
+						$('#lightbox').removeClass('active');
+						$('body').css('overflow', 'auto');
+					});
+					
+					$('#lightbox').on('click', function(e) {
+						if (e.target === this) {
+							$('#lightbox').removeClass('active');
+							$('body').css('overflow', 'auto');
+						}
+					});
+					
+					$(document).on('keydown', function(e) {
+						if (e.key === 'Escape') {
+							$('#lightbox').removeClass('active');
+							$('body').css('overflow', 'auto');
+						}
+					});
+				});
+			</script>
+
+	</body>
+</html>

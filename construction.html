@@ -1,21 +1,116 @@
 <!DOCTYPE HTML>
 <!--
-	Smooth Soar  by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+	Smooth Soar — Construction Services
 -->
 <html>
 	<head>
-		<title>Smooth Soar</title>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C6FB7LNQT5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C6FB7LNQT5');
+</script>
+		<title>Smooth Soar — Construction</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Construction page refinements */
+			.service-block {
+				background: rgba(255,255,255,0.03);
+				border-radius: 8px;
+				padding: 1.5em 2em;
+				margin-bottom: 1.5em;
+				border-left: 3px solid #062038;
+				transition: background 0.3s ease, border-color 0.3s ease;
+			}
+			.service-block:hover {
+				background: rgba(255,255,255,0.06);
+				border-left-color: #aa14cc;
+			}
+			.service-block h3 {
+				color: #fff;
+				font-size: 1.3em;
+				margin-bottom: 0.4em;
+			}
+			.service-block h3 .icon {
+				color: #aa14cc;
+				margin-right: 0.5em;
+				font-size: 0.9em;
+			}
+			.service-block p {
+				color: #c0c5c9;
+				margin-bottom: 0;
+				line-height: 1.7;
+			}
+			.gallery-grid {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 1.5em;
+				margin: 2em 0;
+			}
+			.gallery-grid .gallery-item {
+				border-radius: 8px;
+				overflow: hidden;
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+			}
+			.gallery-grid .gallery-item:hover {
+				transform: scale(1.02);
+				box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+			}
+			.gallery-grid .gallery-item img {
+				width: 100%;
+				height: 200px;
+				object-fit: cover;
+				display: block;
+			}
+			.cta-box {
+				background: rgba(170, 20, 204, 0.08);
+				border: 1px solid rgba(170, 20, 204, 0.2);
+				border-radius: 8px;
+				padding: 2.5em;
+				text-align: center;
+				margin-top: 2.5em;
+			}
+			.cta-box h3 {
+				color: #fff;
+				font-size: 1.5em;
+				margin-bottom: 0.5em;
+			}
+			.cta-box p {
+				color: #9ba6af;
+				margin-bottom: 1.5em;
+			}
+			@media screen and (max-width: 736px) {
+				.gallery-grid {
+					grid-template-columns: repeat(2, 1fr);
+					gap: 1em;
+				}
+				.gallery-grid .gallery-item img {
+					height: 150px;
+				}
+				.service-block {
+					padding: 1.25em;
+				}
+				.cta-box {
+					padding: 1.5em;
+				}
+			}
+			@media screen and (max-width: 480px) {
+				.gallery-grid {
+					grid-template-columns: 1fr 1fr;
+				}
+			}
+		</style>
 	</head>
 	<body>
 
 		<!-- Header -->
 			<header id="header">
-				<h1><a href="/">Smooth<span>Soar</span></a></h1>
+				<h1><a href="index.html">Smooth<span>Soar</span></a></h1>
 				<a href="#menu">Menu</a>
 			</header>
 
@@ -24,92 +119,151 @@
 				<ul class="links">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="services.html">Services</a></li>
-					<li><a href="contact.html">Contact us</a></li>
+					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
 
-			<!-- Banner -->
-			<!--
-				To use a video as your background, set data-video to the name of your video without
-				its extension (eg. images/banner). Your video must be available in both .mp4 and .webm
-				formats to work correctly.
-			-->
-				<section id="banner" data-video="images/banner">
-					<div class="inner">
-						<header>
-							<h1>This is Smooth Soar </h1>
-							<p>At Smooth Soar, we specialize in turning the ordinary into the extraordinary through the power of aerial imagery.
-                                With a passion for innovation and an eye for detail, we bring a new perspective to every project.</p>
-						</header>
-						<a href="#main" class="button big alt scrolly">View our work.</a>
-					</div>
+		<!-- Banner -->
+			<section id="banner" data-video="images/banner">
+				<div class="inner">
+					<header>
+						<h1>Construction <br />from a new angle</h1>
+						<p>From groundbreaking to grand opening — we document every stage with clarity and precision.</p>
+					</header>
+					<a href="#main" class="button big alt scrolly">Explore our services</a>
+				</div>
+			</section>
 
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Overview -->
+				<section class="wrapper style1">
+					<div class="inner">
+						<header class="align-center">
+							<h2>Why drone photography for construction?</h2>
+							<p>Save time, improve safety, and gain a complete view of your project — all from above.</p>
+						</header>
+
+						<div class="service-block">
+							<h3><span class="icon fa-shield"></span> Safety Inspections</h3>
+							<p>Drones can access hard-to-reach or hazardous areas, minimizing the need for workers to be exposed to dangerous conditions. They can be used to inspect structures, roofs, and other high-risk locations for safety compliance and potential issues.</p>
+						</div>
+
+						<div class="service-block">
+							<h3><span class="icon fa-check-circle"></span> Quality Control</h3>
+							<p>Drones equipped with high-resolution cameras can capture detailed images of construction elements, helping identify quality-related discrepancies and ensuring that work meets specifications.</p>
+						</div>
+
+						<div class="service-block">
+							<h3><span class="icon fa-comments"></span> Communication &amp; Collaboration</h3>
+							<p>Drones provide a visual overview of the construction site, aiding in communication between stakeholders who might be off-site. This improves collaboration and decision-making among project teams.</p>
+						</div>
+
+						<div class="service-block">
+							<h3><span class="icon fa-leaf"></span> Environmental Monitoring</h3>
+							<p>Drones can monitor environmental conditions on construction sites, including erosion, sediment runoff, and potential environmental impacts. This information helps ensure compliance with regulations.</p>
+						</div>
+
+						<div class="service-block">
+							<h3><span class="icon fa-camera"></span> Marketing &amp; Documentation</h3>
+							<p>Aerial footage captured by drones can be used for marketing purposes, showcasing completed projects from unique perspectives. Drones can also provide a visual record of the construction process for documentation and historical reference.</p>
+						</div>
+					</div>
 				</section>
 
-<!--- #MAIN -->
-<div id="main">
-<!--- #MAIN -->
-    
-        <section class="wrapper">
-            <div class="inner">
-            <header class="align-center">
-                <h2>Construction</h2>
-                    <p>Showcase your projects like never before! Our drone photography offers a unique vantage point for documenting construction progress, 
-                       inspecting roofs, and highlighting property features, giving you an edge in the competitive real estate market.</p>
-                <h2>Safety Inspections</h2>
-                    <p>Drones can access hard-to-reach or hazardous areas, minimizing the need for workers to be exposed to dangerous conditions. 
-                       They can be used to inspect structures, roofs, and other high-risk locations for safety compliance and potential issues.</p>
-                <h2>Quality Control</h2>
-                    <p>Drones equipped with high-resolution cameras can capture detailed images of construction elements, 
-                       helping identify quality-related discrepancies and ensuring that work meets specifications.</p>
-                <h2>Communication and Collaboration</h2>
-                    <p>Drones provide a visual overview of the construction site, aiding in communication between stakeholders who might be off-site. 
-                       This improves collaboration and decision-making among project teams.</p>
-                <h2>Environmental Monitoring</h2>
-                    <p>Drones can monitor environmental conditions on construction sites, including erosion, sediment runoff, and potential environmental impacts. 
-                       This information helps ensure compliance with regulations.</p>
-                <h2>Marketing and Documentation</h2>
-                    <p>Aerial footage captured by drones can be used for marketing purposes, showcasing completed projects from unique perspectives. 
-                       Drones can also provide a visual record of the construction process for documentation and historical reference.</p>
-                </header>
-        </div>
-    
-    </div>
-            <!-- Break -->
-    <span class="image fit"><img src="images/pic01.jpg" alt=""></span>
-    <div class="box alt">
-        <div class="row 50% uniform">
-            <div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt=""></span></div>
-            <div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt=""></span></div>
-            <div class="4u$"><span class="image fit"><img src="images/pic01.jpg" alt=""></span></div>
-            <!-- Break -->
-            <div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt=""></span></div>
-            <div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt=""></span></div>
-            <div class="4u$"><span class="image fit"><img src="images/pic01.jpg" alt=""></span></div>
-            <!-- Break -->
-        </div>
-    </div>
-            </header>
-</div>
-</div>
+				<!-- Gallery -->
+				<section class="wrapper style2">
+					<div class="inner">
+						<header class="align-center">
+							<h2>Project gallery</h2>
+							<p>See our work in action — from foundation to finish.</p>
+						</header>
 
-<!-- Footer -->
-<footer id="footer">
-    <div class="copyright">
-        <ul class="icons">
-            <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-            <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-            <li><a href="#" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
-        </ul>
-    </div>
-</footer>
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/skel.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
+						<div class="gallery-grid">
+							<div class="gallery-item">
+								<img src="images/construction1.jpg" alt="Construction site overview" />
+							</div>
+							<div class="gallery-item">
+								<img src="images/construction2.jpg" alt="Architectural drone view" />
+							</div>
+							<div class="gallery-item">
+								<img src="images/Construction3.jpg" alt="Heavy equipment on site" />
+							</div>
+							<div class="gallery-item">
+								<img src="images/Construction4.jpg" alt="Urban construction project" />
+							</div>
+							<div class="gallery-item">
+								<img src="images/Construction5.jpg" alt="Bridge construction" />
+							</div>
+							<div class="gallery-item">
+								<img src="images/Construction6.jpg" alt="Residential construction" />
+							</div>
+						</div>
+					</div>
+				</section>
 
-</body>
+				<!-- Call to action -->
+				<section class="wrapper">
+					<div class="inner">
+						<div class="cta-box">
+							<h3>Ready to elevate your construction project?</h3>
+							<p>Get a complete aerial view of your site — from progress tracking to final showcase.</p>
+							<a href="contact.html" class="button special big">Get a quote</a>
+						</div>
+					</div>
+				</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="flex flex-3">
+						<div class="col">
+							<h3>Quick links</h3>
+							<ul class="alt">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="services.html">Services</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</div>
+						<div class="col">
+							<h3>Services</h3>
+							<ul class="alt">
+								<li><a href="services.html#construction">Construction</a></li>
+								<li><a href="services.html#realestate">Real Estate</a></li>
+								<li><a href="services.html#roofing">Roofing</a></li>
+								<li><a href="services.html#agriculture">Agriculture</a></li>
+							</ul>
+						</div>
+						<div class="col">
+							<h3>Connect</h3>
+							<ul class="alt">
+								<li><a href="https://twitter.com/SmoothSoar">Twitter</a></li>
+								<li><a href="https://www.instagram.com/smoothsoar/">Instagram</a></li>
+								<li><a href="#">Facebook</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					<ul class="icons">
+						<li><a href="https://twitter.com/SmoothSoar" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/smoothsoar/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
+					</ul>
+					<p style="margin-top: 1em; font-size: 0.8em; opacity: 0.6;">&copy; Smooth Soar. All rights reserved.</p>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>

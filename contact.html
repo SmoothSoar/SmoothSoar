@@ -1,109 +1,378 @@
 <!DOCTYPE HTML>
 <!--
-	Smooth Soar  by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+    Smooth Soar — Contact
+    Seamless booking with Calendly integration
 -->
-<html>
-	<head>
-		<title>Smooth Soar</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body>
+<html lang="en">
+    <head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C6FB7LNQT5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-		<!-- Header -->
-			<header id="header">
-				<h1><a href="/">Smooth<span>Soar</span></a></h1>
-				<a href="#menu">Menu</a>
-			</header>
+  gtag('config', 'G-C6FB7LNQT5');
+</script>
+        <title>Smooth Soar — Contact & Book a Consultation</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Contact Smooth Soar for professional drone photography. Book a free consultation or send us a message about your project." />
+        <meta name="keywords" content="contact drone photographer, book drone photography, aerial photography consultation" />
 
-		<!-- Nav -->
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="services.html">Services</a></li>
-					<li><a href="elements.html">Contact us</a></li>
-				</ul>
-			</nav>
+        <meta property="og:title" content="Smooth Soar — Contact & Book a Consultation" />
+        <meta property="og:description" content="Get in touch or book a free consultation for your drone photography project." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://smoothsoar.com/contact.html" />
 
-			<!-- Banner -->
-			<!--
-				To use a video as your background, set data-video to the name of your video without
-				its extension (eg. images/banner). Your video must be available in both .mp4 and .webm
-				formats to work correctly.
-			-->
-				<section id="banner" data-video="images/banner">
-					<div class="inner">
-						<header>
-							<h1>This is Smooth Soar </h1>
-							<p>At Smooth Soar, we specialize in turning the ordinary into the extraordinary through the power of aerial imagery.
-                                With a passion for innovation and an eye for detail, we bring a new perspective to every project.</p>
-						</header>
-						<a href="#main" class="button big alt scrolly">View our work.</a>
-					</div>
+        <link rel="canonical" href="https://smoothsoar.com/contact.html" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
 
-				</section>
+        <style>
+            /* --- Contact Page Specific Styles --- */
+            .contact-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 3em;
+                margin: 2em 0;
+            }
+            .contact-info {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5em;
+            }
+            .info-item {
+                background: rgba(255,255,255,0.04);
+                padding: 1.25em 1.5em;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                gap: 1em;
+                border: 1px solid rgba(255,255,255,0.06);
+                transition: background 0.3s ease, transform 0.3s ease;
+            }
+            .info-item:hover {
+                background: rgba(255,255,255,0.07);
+                transform: translateX(5px);
+            }
+            .info-item .icon {
+                font-size: 1.8em;
+                color: #aa14cc;
+                width: 2em;
+                text-align: center;
+                flex-shrink: 0;
+            }
+            .info-item .details h4 {
+                color: #fff;
+                font-size: 1em;
+                margin-bottom: 0.1em;
+            }
+            .info-item .details p, .info-item .details a {
+                color: #9ba6af;
+                font-size: 0.9em;
+                margin-bottom: 0;
+            }
+            .info-item .details a:hover {
+                color: #fff;
+            }
 
-<!--- #MAIN -->
-<div id="main">
-<!--- #MAIN -->
+            /* --- Calendly Section --- */
+            .calendly-section {
+                background: rgba(255,255,255,0.03);
+                border-radius: 8px;
+                padding: 2em;
+                border: 1px solid rgba(170,20,204,0.15);
+                margin-top: 2em;
+            }
+            .calendly-section .calendly-inline-widget {
+                min-width: 320px;
+                height: 700px;
+            }
 
-    <section class="wrapper">
-        <div class="inner">
-        <header class="align-center">
+            /* --- Form --- */
+            .contact-form-wrapper {
+                background: rgba(255,255,255,0.03);
+                border-radius: 8px;
+                padding: 2em;
+                border: 1px solid rgba(255,255,255,0.06);
+            }
+            .contact-form-wrapper form .row.uniform {
+                margin: 0 0 1.5em;
+            }
+            .contact-form-wrapper form .row.uniform > * {
+                padding: 0 0 0 1.5em;
+            }
+            .contact-form-wrapper form .row.uniform {
+                margin: 0 0 -1.5em -1.5em;
+            }
 
-            <h3>Contact us</h3>
+            /* --- Responsive --- */
+            @media screen and (max-width: 980px) {
+                .contact-grid {
+                    grid-template-columns: 1fr;
+                    gap: 2em;
+                }
+                .calendly-section {
+                    padding: 1em;
+                }
+                .calendly-section .calendly-inline-widget {
+                    height: 600px;
+                }
+            }
+            @media screen and (max-width: 736px) {
+                .contact-form-wrapper {
+                    padding: 1.25em;
+                }
+                .calendly-section {
+                    padding: 0.5em;
+                }
+                .calendly-section .calendly-inline-widget {
+                    height: 500px;
+                }
+                .info-item {
+                    padding: 1em;
+                }
+            }
+        </style>
+    </head>
+    <body>
 
-            <form method="post" action="https://formspree.io/f/xnqenark">
-                <div class="row uniform">
-                    <div class="6u 12u$(xsmall)">
-                        <input type="text" name="name" id="name" value="" placeholder="Name">
-                        <div data-lastpass-icon-root="true" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div></div>
-                    <div class="6u$ 12u$(xsmall)">
-                        <input type="email" name="email" id="email" value="" placeholder="Email">
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="index.html">Smooth<span>Soar</span></a></h1>
+            <a href="#menu">Menu</a>
+        </header>
+
+        <!-- Nav -->
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html" style="color: #aa14cc; font-weight: 700;">📅 Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Banner -->
+        <section id="banner" data-video="images/banner">
+            <div class="inner">
+                <header>
+                    <h1>Let's connect</h1>
+                    <p>Book a free consultation or send us a message.<br />We're here to help you see things from a new perspective.</p>
+                </header>
+                <a href="#main" class="button big alt scrolly">Get in touch</a>
+            </div>
+        </section>
+
+        <!-- Main -->
+        <div id="main">
+
+            <section class="wrapper">
+                <div class="inner">
+
+                    <header class="align-center">
+                        <h2>How can we help?</h2>
+                        <p>Choose the option that works best for you.</p>
+                    </header>
+
+                    <!-- Contact Grid: Info + Form -->
+                    <div class="contact-grid">
+
+                        <!-- Left Column: Contact Info -->
+                        <div class="contact-info">
+
+                            <div class="info-item">
+                                <span class="icon fa-calendar-check-o"></span>
+                                <div class="details">
+                                    <h4>Book a Free Consultation</h4>
+                                    <p>Schedule a 30-minute call to discuss your project.</p>
+                                    <a href="https://calendly.com/smoothsoardrones/free-consultation" target="_blank" class="button small alt" style="margin-top: 0.5em; padding: 0.3em 1.2em; font-size: 0.8em;">
+                                        Book Now →
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <span class="icon fa-envelope-o"></span>
+                                <div class="details">
+                                    <h4>Email</h4>
+                                    <a href="mailto:smoothsoardrones@gmail.com">smoothsoardrones@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <span class="icon fa-phone"></span>
+                                <div class="details">
+                                    <h4>Phone</h4>
+                                    <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <span class="icon fa-map-marker"></span>
+                                <div class="details">
+                                    <h4>Service Area</h4>
+                                    <p>Available nationwide — we travel to you!</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item" style="border-color: rgba(170,20,204,0.2); background: rgba(170,20,204,0.05);">
+                                <span class="icon fa-clock-o"></span>
+                                <div class="details">
+                                    <h4>Response Time</h4>
+                                    <p>We reply within <strong>24 hours</strong> to all inquiries.</p>
+                                </div>
+                            </div>
+
+                            <!-- Social Proof Mini -->
+                            <div style="margin-top: 0.5em; text-align: center; padding: 1em; background: rgba(255,255,255,0.02); border-radius: 8px;">
+                                <p style="color: #676d71; font-size: 0.85em; margin-bottom: 0.5em;">Connect with us</p>
+                                <div style="display: flex; gap: 1.5em; justify-content: center;">
+                                    <a href="https://twitter.com/SmoothSoar" class="icon fa-twitter" style="color: #9ba6af; font-size: 1.5em; transition: color 0.3s ease;"><span class="label">Twitter</span></a>
+                                    <a href="https://www.instagram.com/smoothsoar/" class="icon fa-instagram" style="color: #9ba6af; font-size: 1.5em; transition: color 0.3s ease;"><span class="label">Instagram</span></a>
+                                    <a href="#" class="icon fa-facebook" style="color: #9ba6af; font-size: 1.5em; transition: color 0.3s ease;"><span class="label">Facebook</span></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Right Column: Contact Form -->
+                        <div class="contact-form-wrapper">
+                            <h3 style="color: #fff; margin-bottom: 0.5em;">Send a message</h3>
+                            <p style="color: #9ba6af; font-size: 0.9em; margin-bottom: 1.5em;">Prefer to write? Fill out the form and we'll get back to you within 24 hours.</p>
+
+                            <form method="post" action="https://formsubmit.co/smoothsoardrones@gmail.com">
+                                <input type="hidden" name="_subject" value="New message from Smooth Soar website" />
+                                <input type="hidden" name="_captcha" value="false" />
+                                <input type="hidden" name="_next" value="https://smoothsoar.com/thankyou.html" />
+                                <input type="hidden" name="_template" value="table" />
+
+                                <div class="row uniform">
+                                    <div class="6u 12u$(xsmall)">
+                                        <input type="text" name="name" id="name" value="" placeholder="Your name" required />
+                                    </div>
+                                    <div class="6u$ 12u$(xsmall)">
+                                        <input type="email" name="email" id="email" value="" placeholder="Your email" required />
+                                    </div>
+                                    <div class="12u$">
+                                        <div class="select-wrapper">
+                                            <select name="service" id="service">
+                                                <option value="">— What can we help with? —</option>
+                                                <option value="Construction">Construction</option>
+                                                <option value="Real Estate">Real Estate</option>
+                                                <option value="Roofing">Roofing</option>
+                                                <option value="Agriculture">Agriculture</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="12u$">
+                                        <textarea name="message" id="message" placeholder="Tell us about your project..." rows="5" required></textarea>
+                                    </div>
+                                    <div class="12u$">
+                                        <ul class="actions" style="display: flex; gap: 1em; flex-wrap: wrap;">
+                                            <li><input type="submit" value="Send message" class="special" /></li>
+                                            <li><input type="reset" value="Clear" class="alt" /></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
                     </div>
-                    <!-- Break -->
-                    <div class="12u$">
-                        <div class="select-wrapper">
-                            <select name="category" id="category">
-                                <option value="">- Category -</option>
-                                <option value="1">Real estate</option>
-                                <option value="1">Contruction</option>
-                                <option value="1">Agricultural</option>
-                                <option value="1">Other</option>
-                            </select>
+
+                    <!-- Calendly Section (Full Embed) -->
+                    <div class="calendly-section">
+                        <header class="align-center" style="margin-bottom: 1.5em;">
+                            <h3 style="color: #fff; margin-bottom: 0.25em;">📅 Book a Free Consultation</h3>
+                            <p style="color: #9ba6af; font-size: 0.95em;">Choose a time that works for you. We'll discuss your project, timeline, and how we can help.</p>
+                        </header>
+                        <!-- Calendly Inline Widget -->
+                        <div class="calendly-inline-widget" 
+                             data-url="https://calendly.com/smoothsoardrones/free-consultation?hide_event_type_details=0&hide_gdpr_banner=0"
+                             style="min-width:320px;height:700px;">
                         </div>
                     </div>
-                    <!-- Break -->
-                    <div class="6u$ 12u$(small)">
-                        <input type="checkbox" id="human" name="humanVerification" checked="">
-                        <label for="human">I am a human and not a robot</label>
+
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <div class="flex flex-3">
+                    <div class="col">
+                        <h3>Quick links</h3>
+                        <ul class="alt">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
                     </div>
-                    <!-- Break -->
-                    <div class="12u$">
-                        <textarea name="messageContent" id="message" placeholder="Enter your message" rows="6" data-gramm="false" wt-ignore-input="true"></textarea>
+                    <div class="col">
+                        <h3>Services</h3>
+                        <ul class="alt">
+                            <li><a href="services.html#construction">Construction</a></li>
+                            <li><a href="services.html#realestate">Real Estate</a></li>
+                            <li><a href="services.html#roofing">Roofing</a></li>
+                            <li><a href="services.html#agriculture">Agriculture</a></li>
+                        </ul>
                     </div>
-                    <!-- Break -->
-                    <div class="12u$">
-                        <ul class="actions">
-                            <li><input type="submit" name="submitEmail" value="Send Message"></li>
-                            <li><input type="reset" name="ResetEmail" value="Reset" class="alt"></li>
+                    <div class="col">
+                        <h3>Connect</h3>
+                        <ul class="alt">
+                            <li><a href="https://twitter.com/SmoothSoar">Twitter</a></li>
+                            <li><a href="https://www.instagram.com/smoothsoar/">Instagram</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="mailto:smoothsoardrones@gmail.com">Email</a></li>
                         </ul>
                     </div>
                 </div>
-            </form>
-            </header>
-    </div>
+            </div>
+            <div class="copyright">
+                <ul class="icons">
+                    <li><a href="https://twitter.com/SmoothSoar" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                    <li><a href="https://www.instagram.com/smoothsoar/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
+                </ul>
+                <p style="margin-top: 1em; font-size: 0.8em; opacity: 0.6;">&copy; Smooth Soar. All rights reserved.</p>
+            </div>
+        </footer>
 
-</div>
+        <!-- Calendly Widget Script (loads the embed) -->
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/skel.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+        <!-- Optional: auto-close mobile menu on link click -->
+        <script>
+            $(document).ready(function() {
+                // Close mobile menu when any nav link is clicked
+                $('#menu .links a').on('click', function() {
+                    if ($('#menu').hasClass('visible')) {
+                        $('#menu').removeClass('visible');
+                    }
+                });
+            });
+        </script>
+
     </body>
 </html>
